@@ -20,14 +20,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-wine-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-wine-charcoal text-wine-cream">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-bold tracking-wider mb-2">VINESSENCE</h3>
-              <p className="text-wine-200 text-sm font-medium">
+              <h3 className="text-2xl font-serif font-light tracking-[0.2em] mb-3">VINESSENCE</h3>
+              <p className="text-wine-300 text-sm font-light tracking-wide">
                 Boutique French Wine Importer – Thailand
               </p>
             </div>

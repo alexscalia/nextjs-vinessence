@@ -10,20 +10,28 @@ export default {
     extend: {
       colors: {
         wine: {
-          50: '#fef7f6',
-          100: '#fdf2f0',
-          200: '#fbe5e1',
-          300: '#f7ccc4',
-          400: '#f1a394',
-          500: '#e87a6a',
-          600: '#d65549',
-          700: '#b83e35',
-          800: '#9a342d',
-          900: '#722f37',
-          burgundy: '#722F37',  // Wine burgundy (main brand color)
-          gold: '#D9AC6F',      // Wine gold accent  
-          charcoal: '#111827',  // Wine charcoal (dark text)
+          50: '#fefbf7',      // Cream white
+          100: '#fdf5e6',     // Light cream
+          200: '#f7e6d3',     // Warm beige
+          300: '#e8d5b7',     // Light gold
+          400: '#d4b896',     // Medium gold
+          500: '#c19a6b',     // Warm gold
+          600: '#a67c52',     // Deep gold
+          700: '#8b6142',     // Bronze
+          800: '#6d4c35',     // Dark bronze
+          900: '#523929',     // Deep brown
+          charcoal: '#2d2d2d', // Sophisticated dark gray
+          gold: '#c19a6b',     // Primary gold
+          cream: '#fdf5e6',    // Cream background
         },
+      },
+      fontFamily: {
+        'serif': ['Playfair Display', 'Georgia', 'serif'],
+        'sans': ['Montserrat', 'Arial', 'sans-serif'],
+      },
+      letterSpacing: {
+        'extra-wide': '0.2em',
+        'ultra-wide': '0.3em',
       },
     },
   },

@@ -32,16 +32,16 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="sticky top-0 z-50 w-full border-b border-wine-200/30 bg-wine-cream/95 backdrop-blur supports-[backdrop-filter]:bg-wine-cream/90">
       <div className="container mx-auto px-4">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-24 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-wine-800 tracking-wider">
+              <span className="text-3xl font-serif font-light text-wine-charcoal tracking-[0.2em] leading-tight">
                 VINESSENCE
               </span>
-              <span className="text-xs text-wine-600 font-medium tracking-wide">
+              <span className="text-xs text-wine-700 font-light tracking-[0.15em] mt-1">
                 BOUTIQUE FRENCH WINE IMPORTER
               </span>
             </div>
@@ -55,7 +55,7 @@ const Header = () => {
                   <NavigationMenuLink asChild>
                     <Link
                       href={item.href}
-                      className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium text-wine-700 transition-colors hover:bg-wine-50 hover:text-wine-900 focus:bg-wine-50 focus:text-wine-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                      className="group inline-flex h-12 w-max items-center justify-center bg-transparent px-5 py-2 text-sm font-light text-wine-charcoal tracking-wide transition-colors hover:text-wine-gold focus:text-wine-gold focus:outline-none relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-wine-gold after:transition-all after:duration-300 hover:after:w-full"
                     >
                       {item.name}
                     </Link>
