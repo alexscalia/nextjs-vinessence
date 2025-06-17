@@ -52,9 +52,6 @@ const Header = () => {
               <span className={`font-serif font-light text-wine-charcoal tracking-[0.2em] leading-tight transition-all duration-300 ${isScrolled ? 'text-2xl' : 'text-3xl'}`}>
                 VINESSENCE
               </span>
-              <span className={`text-wine-700 font-light tracking-[0.15em] transition-all duration-300 ${isScrolled ? 'text-xs mt-0.5' : 'text-xs mt-1'}`}>
-                BOUTIQUE FRENCH WINE IMPORTER
-              </span>
             </div>
           </Link>
 
@@ -89,9 +86,6 @@ const Header = () => {
                 <div className="flex flex-col mb-6">
                   <span className="text-xl font-bold text-wine-800 tracking-wider">
                     VINESSENCE
-                  </span>
-                  <span className="text-xs text-wine-600 font-medium tracking-wide">
-                    BOUTIQUE FRENCH WINE IMPORTER
                   </span>
                 </div>
                 {navigationItems.map((item) => (
