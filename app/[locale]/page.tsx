@@ -28,10 +28,7 @@ export default async function HomePage({
 
   return (
     <>
-      <Hero />
-      <WhyChooseUs />
-      <HowItWorks />
-      <CallToAction />
+    
     </>
   );
 } 
