@@ -89,15 +89,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${playfair.variable} ${montserrat.variable}`}>
       <head>
-        {/* Preconnect to external domains for performance */}
-        <link rel="preconnect" href="https://images.unsplash.com" />
-        <link rel="dns-prefetch" href="https://images.unsplash.com" />
-        
-        {/* Preload critical hero images */}
-        <link rel="preload" as="image" href="/images/hero-wine-vineyard.webp" />
-        <link rel="preload" as="image" href="/images/hero-winery.webp" />
-        <link rel="preload" as="image" href="/images/hero-container-ship.webp" />
-        <link rel="preload" as="image" href="/images/hero-bangkok-skyline.webp" />
+        {/* Performance optimizations */}
       </head>
       <body className="font-montserrat antialiased" suppressHydrationWarning={true}>
         <div className="min-h-screen flex flex-col">
