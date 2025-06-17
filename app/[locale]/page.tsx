@@ -27,127 +27,155 @@ export default async function HomePage({
   setRequestLocale(locale);
 
   return (
-    <div className="min-h-screen bg-wine-cream">
-      {/* Hero Section - Magazine Style */}
-      <section className="relative overflow-hidden">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[90vh]">
-          {/* Left Side - Text Content */}
-          <div className="flex items-center justify-center p-8 lg:p-16 bg-wine-charcoal text-wine-cream">
-            <div className="max-w-lg space-y-8">
-              <div className="space-y-4">
-                <p className="text-sm font-light tracking-[0.3em] text-wine-gold uppercase">
-                  Our Story
-                </p>
-                <h1 className="text-5xl lg:text-6xl font-serif font-light leading-tight tracking-wide">
-                  The Art Behind
-                  <span className="block text-wine-gold italic">The Wine</span>
-                </h1>
-              </div>
-              
-              <div className="space-y-6 text-wine-200">
-                <p className="text-lg font-light leading-relaxed">
-                  Since our establishment, VINESSENCE has been dedicated to celebrating 
-                  the finest French winemaking traditions in Thailand.
-                </p>
-                <p className="font-light leading-relaxed">
-                  We believe that every bottle tells a story – of passionate vignerons, 
-                  centuries-old traditions, and the unique terroir that makes French wine extraordinary.
-                </p>
-              </div>
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="relative py-20 lg:py-32 bg-gradient-to-br from-wine-50 to-wine-100">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h1 className="text-4xl lg:text-6xl font-serif font-light text-wine-charcoal leading-tight">
+              Boutique French Wines — 
+              <span className="block text-wine-gold">Directly Imported for Thailand's Hospitality Industry.</span>
+            </h1>
+            
+            <p className="text-xl lg:text-2xl font-light text-wine-700 leading-relaxed max-w-3xl mx-auto">
+              Exclusive selections from small producers across France. Sourced directly, imported professionally, delivered with care.
+            </p>
 
-              <div className="pt-4">
-                <div className="w-16 h-px bg-wine-gold mb-4"></div>
-                <p className="text-sm font-light tracking-wide text-wine-300">
-                  Curated exclusively for discerning palates
-                </p>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+              <a 
+                href="/wines" 
+                className="inline-flex items-center justify-center px-8 py-3 bg-wine-charcoal text-white font-light tracking-wide hover:bg-wine-800 transition-colors"
+              >
+                Browse Our Wines
+              </a>
+              <a 
+                href="/contact" 
+                className="inline-flex items-center justify-center px-8 py-3 border border-wine-charcoal text-wine-charcoal font-light tracking-wide hover:bg-wine-charcoal hover:text-white transition-colors"
+              >
+                Contact Our Sales Team
+              </a>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Right Side - Featured Year */}
-          <div className="relative flex items-center justify-center bg-wine-200 overflow-hidden">
-            <div className="text-center space-y-4">
-              <div className="text-[12rem] lg:text-[16rem] font-serif font-light text-wine-charcoal/20 leading-none">
-                2024
+      {/* Our Philosophy */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-serif font-light text-wine-charcoal mb-8 text-center">
+              Discover the Hidden Gems of France.
+            </h2>
+            <p className="text-lg font-light text-wine-700 leading-relaxed text-center">
+              Vinessence is a boutique French wine importer based in Thailand. We carefully curate our portfolio by working directly with small, independent producers from France's most iconic regions. Every bottle reflects the unique character of its terroir, the dedication of its winemaker, and the artisanal tradition behind its creation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Serve */}
+      <section className="py-20 bg-wine-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-serif font-light text-wine-charcoal mb-8 text-center">
+              Serving Thailand's Hospitality Industry
+            </h2>
+            <div className="space-y-6">
+              <p className="text-lg font-light text-wine-700 leading-relaxed text-center">
+                We partner with businesses of all sizes across Thailand's food & beverage sector:
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                {[
+                  'Restaurants — from casual to fine dining',
+                  'Hotels & Resorts', 
+                  'Bars & Lounges',
+                  'Cafés and Bistros',
+                  'Catering & Event Companies',
+                  'Specialty Retail & Delis',
+                  'Distributors & Wholesalers'
+                ].map((business, index) => (
+                  <div key={index} className="bg-white p-6 text-center">
+                    <p className="font-light text-wine-charcoal">{business}</p>
+                  </div>
+                ))}
               </div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <h2 className="text-3xl lg:text-4xl font-serif font-light text-wine-charcoal tracking-wide">
-                    ESTABLISHED
-                  </h2>
-                  <p className="text-wine-700 font-light tracking-[0.2em] text-sm">
-                    EXCELLENCE IN EVERY BOTTLE
-                  </p>
-                </div>
+
+              <p className="text-lg font-light text-wine-700 leading-relaxed text-center pt-8">
+                Whether you're developing a new wine list or looking for exclusive labels, our experienced team offers full support and consultation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Boutique Wines */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-serif font-light text-wine-charcoal mb-12 text-center">
+              Why Boutique Wines?
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center space-y-4">
+                <h3 className="text-xl font-light text-wine-gold tracking-wide">Authenticity</h3>
+                <p className="font-light text-wine-700 leading-relaxed">
+                  Wines crafted with passion by family-owned estates.
+                </p>
+              </div>
+              
+              <div className="text-center space-y-4">
+                <h3 className="text-xl font-light text-wine-gold tracking-wide">Limited Production</h3>
+                <p className="font-light text-wine-700 leading-relaxed">
+                  Unique labels, often unavailable through large importers.
+                </p>
+              </div>
+              
+              <div className="text-center space-y-4">
+                <h3 className="text-xl font-light text-wine-gold tracking-wide">Direct Partnerships</h3>
+                <p className="font-light text-wine-700 leading-relaxed">
+                  We work closely with the producers for every wine we bring to Thailand.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Philosophy Section - Magazine Grid */}
-      <section className="py-20 bg-wine-cream">
+      {/* Wine Portfolio Highlights */}
+      <section className="py-20 bg-wine-charcoal text-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
-            {/* Large Text Block */}
-            <div className="lg:col-span-2 space-y-8">
-              <div className="max-w-4xl">
-                <h2 className="text-4xl lg:text-5xl font-serif font-light text-wine-charcoal leading-tight mb-8">
-                  "Let us take care of 
-                  <span className="italic text-wine-gold"> the details.</span>"
-                </h2>
-                <p className="text-lg font-light text-wine-700 leading-relaxed">
-                  Every wine in our collection represents a careful selection process, 
-                  where we evaluate not just the quality of the wine, but the story behind it, 
-                  the heritage of the producer, and its perfect pairing with Thai cuisine and climate.
-                </p>
-              </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl lg:text-4xl font-serif font-light mb-8">
+              Explore Our Selection
+            </h2>
+            
+            <p className="text-lg font-light leading-relaxed mb-12">
+              Our wines are carefully sourced from across France's most celebrated regions:
+            </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
-                <div className="space-y-4">
-                  <h3 className="text-xl font-light text-wine-charcoal tracking-wide">Premium Curation</h3>
-                  <p className="text-wine-600 font-light leading-relaxed">
-                    Hand-selected wines from boutique French producers who share our 
-                    commitment to quality and tradition.
-                  </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12">
+              {[
+                'Champagne',
+                'Burgundy', 
+                'Bordeaux',
+                'Rhône Valley',
+                'Loire Valley',
+                'Provence & Languedoc'
+              ].map((region, index) => (
+                <div key={index} className="text-center">
+                  <p className="font-light text-wine-gold tracking-wide">{region}</p>
                 </div>
-                <div className="space-y-4">
-                  <h3 className="text-xl font-light text-wine-charcoal tracking-wide">Expert Guidance</h3>
-                  <p className="text-wine-600 font-light leading-relaxed">
-                    Our sommelier-led tastings and consultations ensure the perfect 
-                    wine selection for every occasion.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
 
-            {/* Sidebar */}
-            <div className="space-y-8">
-              <div className="bg-white p-8 shadow-sm">
-                <h4 className="text-lg font-light text-wine-charcoal mb-4 tracking-wide">
-                  Our Promise
-                </h4>
-                <p className="text-wine-600 font-light text-sm leading-relaxed">
-                  Every bottle we import meets our exacting standards for quality, 
-                  authenticity, and value. We stand behind each selection with our 
-                  personal guarantee of excellence.
-                </p>
-              </div>
-
-              <div className="text-center space-y-4">
-                <div className="text-6xl font-serif font-light text-wine-gold">
-                  EST.
-                </div>
-                <div className="space-y-2">
-                  <p className="text-wine-charcoal font-light tracking-[0.2em] text-sm">
-                    BOUTIQUE FRENCH
-                  </p>
-                  <p className="text-wine-charcoal font-light tracking-[0.2em] text-sm">
-                    WINE IMPORTER
-                  </p>
-                </div>
-              </div>
-            </div>
+            <a 
+              href="/wines" 
+              className="inline-flex items-center justify-center px-8 py-3 bg-wine-gold text-wine-charcoal font-light tracking-wide hover:bg-wine-500 transition-colors"
+            >
+              Browse the Full Portfolio →
+            </a>
           </div>
         </div>
       </section>
