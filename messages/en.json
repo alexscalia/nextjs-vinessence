@@ -1,3 +1,71 @@
 {
-  
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "wines": "Wine Portfolio",
+    "producers": "For Producers",
+    "resources": "Resources",
+    "blog": "Blog & News",
+    "events": "Events",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Boutique French Wines",
+    "subtitle": "Discover the Hidden Gems of France. One Sip at a Time.",
+    "description": "Exclusive selections from small producers across France. Sourced directly, imported professionally, delivered with care.",
+    "browse_wines": "Browse Our Wines",
+    "contact_sales": "Contact Our Sales Team"
+  },
+  "philosophy": {
+    "title": "Discover the Hidden Gems of France.",
+    "description": "Vinessence is a boutique French wine importer based in Thailand. We carefully curate our portfolio by working directly with small, independent producers from France's most iconic regions. Every bottle reflects the unique character of its terroir, the dedication of its winemaker, and the artisanal tradition behind its creation.",
+    "image_alt": "French Winemaker"
+  },
+  "who_we_serve": {
+    "title": "Serving Thailand's Hospitality Industry",
+    "description": "We partner with businesses of all sizes across Thailand's food & beverage sector:",
+    "businesses": {
+      "restaurants": "Restaurants",
+      "hotels": "Hotels & Resorts",
+      "bars": "Bars & Lounges",
+      "cafes": "Cafés and Bistros",
+      "catering": "Catering & Event Companies",
+      "distributors": "Distributors & Wholesalers"
+    },
+    "support_text": "Whether you're developing a new wine list or looking for exclusive labels, our experienced team offers full support and consultation.",
+    "image_alt": "Restaurant Scene"
+  },
+  "why_boutique": {
+    "title": "Why Boutique Wines?",
+    "authenticity": {
+      "title": "Authenticity",
+      "description": "Wines crafted with passion by family-owned estates."
+    },
+    "limited_production": {
+      "title": "Limited Production",
+      "description": "Unique labels, often unavailable through large importers."
+    },
+    "direct_partnerships": {
+      "title": "Direct Partnerships",
+      "description": "We work closely with the producers for every wine we bring to Thailand."
+    },
+    "image_alt": "Boutique Wine Selection"
+  },
+  "portfolio": {
+    "title": "Explore Our Selection",
+    "description": "Our wines are carefully sourced from across France's most celebrated regions:",
+    "regions": {
+      "burgundy": "Burgundy",
+      "bordeaux": "Bordeaux",
+      "champagne": "Champagne",
+      "rhone": "Rhône Valley",
+      "loire": "Loire Valley",
+      "alsace": "Alsace"
+    },
+    "browse_portfolio": "Browse the Full Portfolio"
+  },
+  "language": {
+    "english": "English",
+    "thai": "ไทย"
+  }
 }
