@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Montserrat } from "next/font/google";
 import "../globals.css";
-import Header from "../components/shared/Header";
-import Footer from "../components/shared/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '../../i18n/routing';
