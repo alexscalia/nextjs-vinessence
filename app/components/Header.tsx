@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { Menu, X, ChevronDown } from 'lucide-react';
@@ -17,7 +17,18 @@ import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const t = useTranslations();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navigationItems = [
     { name: 'Home', href: '/' },
@@ -32,16 +43,16 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-wine-200/30 bg-wine-cream/95 backdrop-blur supports-[backdrop-filter]:bg-wine-cream/90">
+    <header className={`sticky top-0 z-50 w-full border-b border-wine-200/30 bg-wine-cream/95 backdrop-blur supports-[backdrop-filter]:bg-wine-cream/90 transition-all duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
       <div className="container mx-auto px-4">
-        <div className="flex h-24 items-center justify-between">
+        <div className={`flex items-center justify-between transition-all duration-300 ${isScrolled ? 'h-16' : 'h-24'}`}>
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex flex-col">
-              <span className="text-3xl font-serif font-light text-wine-charcoal tracking-[0.2em] leading-tight">
+              <span className={`font-serif font-light text-wine-charcoal tracking-[0.2em] leading-tight transition-all duration-300 ${isScrolled ? 'text-2xl' : 'text-3xl'}`}>
                 VINESSENCE
               </span>
-              <span className="text-xs text-wine-700 font-light tracking-[0.15em] mt-1">
+              <span className={`text-wine-700 font-light tracking-[0.15em] transition-all duration-300 ${isScrolled ? 'text-xs mt-0.5' : 'text-xs mt-1'}`}>
                 BOUTIQUE FRENCH WINE IMPORTER
               </span>
             </div>
@@ -55,7 +66,7 @@ const Header = () => {
                   <NavigationMenuLink asChild>
                     <Link
                       href={item.href}
-                      className="group inline-flex h-12 w-max items-center justify-center bg-transparent px-5 py-2 text-sm font-light text-wine-charcoal tracking-wide transition-colors hover:text-wine-gold focus:text-wine-gold focus:outline-none relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-wine-gold after:transition-all after:duration-300 hover:after:w-full"
+                      className={`group inline-flex w-max items-center justify-center bg-transparent px-5 py-2 text-sm font-light text-wine-charcoal tracking-wide transition-all duration-300 hover:text-wine-gold focus:text-wine-gold focus:outline-none relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-wine-gold after:transition-all after:duration-300 hover:after:w-full ${isScrolled ? 'h-10' : 'h-12'}`}
                     >
                       {item.name}
                     </Link>
