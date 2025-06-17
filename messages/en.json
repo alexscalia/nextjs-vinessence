@@ -1,0 +1,743 @@
+{
+  "HomePage": {
+    "title": "Wine Import Thailand - Simplify Your Wine Import Journey",
+    "description": "We help restaurants, hotels, bars, and individuals import wines directly to Thailand, cutting costs and bypassing traditional importers.",
+    "hero": {
+      "title": "Simplify Your Wine Import Journey",
+      "description": "We help restaurants, hotels, bars, retailers, wholesalers and individuals import wines directly, cutting costs and bypassing traditional importers.",
+      "getQuote": "Get a Quote",
+      "contactUs": "Contact Us",
+      "imageAlt": "Wine vineyard background"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us",
+      "subtitle": "Experience the advantages of working with Thailand's premier wine import service",
+      "features": {
+        "lowerCosts": {
+          "title": "Lower Costs",
+          "description": "Save money by importing directly without traditional importer markups"
+        },
+        "fullyLegal": {
+          "title": "Fully Legal",
+          "description": "Complete compliance with Thai import regulations and documentation"
+        },
+        "personalizedAssistance": {
+          "title": "Personalized Assistance",
+          "description": "Dedicated support team to guide you through every step of the process"
+        },
+        "transparentPricing": {
+          "title": "Transparent Pricing",
+          "description": "Clear, upfront costs with no hidden fees or surprise charges"
+        },
+        "fastReliable": {
+          "title": "Fast & Reliable",
+          "description": "Efficient processing and timely delivery of your wine shipments"
+        },
+        "licensedExperienced": {
+          "title": "Licensed & Experienced",
+          "description": "5+ years of proven expertise with hundreds of successful imports"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Our streamlined process makes wine importing simple, legal, and cost-effective",
+      "steps": {
+        "requestQuote": {
+          "title": "Request a Quote",
+          "description": "Tell us about your wine preferences, quantities, and delivery requirements"
+        },
+        "documentation": {
+          "title": "Documentation",
+          "description": "We handle all import permits, customs paperwork, and regulatory compliance"
+        },
+        "shippingLogistics": {
+          "title": "Shipping & Logistics",
+          "description": "Your wines are carefully shipped and tracked from origin to destination"
+        },
+        "deliveryComplete": {
+          "title": "Delivery Complete",
+          "description": "Receive your wines with all proper documentation and import certificates"
+        }
+      }
+    },
+    "callToAction": {
+      "title": "Start importing today",
+      "description": "Ready to transform your wine importing experience? Get a personalized quote and discover how much you can save.",
+      "getQuote": "Get a Quote"
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "forProducers": "For Producers",
+    "contact": "Contact",
+    "menu": "Menu",
+    "siteTitle": "Wine Import Thailand",
+    "siteSubtitle": "Premium wine importing services"
+  },
+  "Services": {
+    "title": "Our Services",
+    "importConsulting": "Import Consulting",
+    "logistics": "Logistics & Shipping",
+    "compliance": "Legal Compliance",
+    "warehousing": "Warehousing"
+  },
+  "About": {
+    "title": "About Wine Import Thailand",
+    "description": "Your trusted partner for wine imports to Thailand"
+  },
+  "Common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us"
+  },
+  "Footer": {
+    "companyName": "Wine Import Thailand",
+    "companyDescription": "Simplifying wine imports to Thailand with professional service, complete legal compliance, and competitive pricing.",
+    "contactUs": "Contact Us",
+    "phone": "+66 61 117 3775",
+    "location": "Bangkok, Thailand",
+    "legal": "Legal",
+    "quickLinks": "Quick Links",
+    "contactPage": "Contact Us",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "importRegulations": "Import Regulations",
+    "copyright": "© 2019-{year} Primeline Trading Co., Ltd. - Excise Import License 0105562203153-3-002 - FDA License 10-3-19263"
+  },
+  "Metadata": {
+    "home": {
+      "title": "Wine Import Thailand - Legal Wine Importing Service",
+      "description": "Professional wine import services for restaurants, hotels, and individuals in Thailand. Licensed, legal, transparent. Save up to 30% on wine imports with our expert team.",
+      "keywords": "wine import Thailand, Thailand wine import, import wine to Thailand, wine importing service, licensed wine importer, restaurant wine supplier, hotel wine import, legal wine import Thailand"
+    },
+    "about": {
+      "title": "About Wine Import Thailand - 5+ Years Licensed Wine Importer",
+      "description": "Learn about Thailand's trusted wine import specialists. 5+ years experience, fully licensed (FDA, Excise, Customs), hundreds of successful shipments for restaurants and hotels.",
+      "keywords": "about wine import Thailand, licensed wine importer, wine import experience, FDA licensed importer, excise license Thailand, wine import company"
+    },
+    "services": {
+      "title": "Wine Import Services Thailand - Complete Import Solutions",
+      "description": "Complete wine import services: FDA registration, customs clearance, excise tax handling, logistics, storage. Import wine, spirits, beverages, and food products to Thailand.",
+      "keywords": "wine import services, Thailand import services, FDA registration, customs clearance, excise tax, wine logistics, spirit import Thailand, beverage import"
+    },
+    "forProducers": {
+      "title": "For Wine Producers - Enter Thai Market with Wine Import Thailand",
+      "description": "International wine producers: Enter Thailand's growing market without local setup. Complete legal import service, distribution network access, full regulatory compliance.",
+      "keywords": "wine producers Thailand, international wine import, Thai market entry, wine distribution Thailand, wine export to Thailand, producer services"
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy - Wine Import Thailand Data Protection",
+      "description": "Learn how Wine Import Thailand protects your personal data. GDPR compliant privacy policy covering data collection, usage, rights, and security measures for our import services.",
+      "keywords": "privacy policy, data protection, GDPR compliance, personal data, wine import privacy, data security, Thailand import privacy"
+    },
+    "termsConditions": {
+      "title": "Terms and Conditions - Wine Import Thailand Website Usage Terms",
+      "description": "Read the terms and conditions governing your use of Wine Import Thailand's website and services, including user responsibilities, intellectual property rights, and legal disclaimers.",
+      "keywords": "terms and conditions, website terms, user agreement, legal terms, wine import Thailand, service terms, website usage, intellectual property, liability disclaimer"
+    },
+    "contact": {
+      "title": "Contact Us - Wine Import Thailand",
+      "description": "Contact Wine Import Thailand for professional wine, spirits, and food import services. Licensed FDA and Excise importer in Bangkok. Get personalized assistance for your import needs.",
+      "keywords": "contact wine import thailand, wine importer bangkok, import services contact, FDA licensed importer, excise licensed importer, wine import consultation, thailand import specialist"
+    },
+    "site": {
+      "name": "Wine Import Thailand",
+      "url": "https://wineimportthailand.com",
+      "locale": "en_US",
+      "type": "website"
+    }
+  },
+  "PageHeros": {
+    "about": {
+      "title": "About Us",
+      "subtitle": "Transforming wine importing in Thailand with transparency, expertise, and full legal compliance.",
+      "backgroundAlt": "Beautiful winery with vineyard rows and château building"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Complete import solutions for wine, spirits, beverages, and food products into Thailand.",
+      "backgroundAlt": "Aerial view of container ship at sea"
+    },
+    "forProducers": {
+      "title": "Enter the Thai Market with Us",
+      "subtitle": "Your trusted partner for bringing wines, spirits, and specialty foods into Thailand's growing market.",
+      "backgroundAlt": "Bangkok metropolitan skyline at evening"
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "subtitle": "How we protect and handle your personal information in compliance with international data protection standards.",
+      "backgroundAlt": "Legal documents and privacy protection concept"
+    },
+    "termsConditions": {
+      "title": "Terms and Conditions",
+      "subtitle": "The terms governing your use of our website and services, ensuring clear understanding of rights and responsibilities.",
+      "backgroundAlt": "Professional warehouse and logistics operations with forklift and organized inventory"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch with our import specialists for personalized assistance with your import needs.",
+      "backgroundAlt": "Professional business communication and customer service"
+    }
+  },
+  "AboutPage": {
+    "ourStory": {
+      "title": "Our Story",
+      "paragraph1": "For the past 5 years, Wine Import Thailand has been successfully operating behind the scenes, managing wine imports for a select group of restaurants, hotels, and private clients.",
+      "paragraph2": "We have handled hundreds of shipments, fully licensed and compliant with all Thai regulations — managing every aspect of FDA registration, excise taxes, customs clearance, storage, and delivery.",
+      "paragraph3": "Now, after years of experience serving a few exclusive clients, we are opening our service to a wider audience — giving businesses and individuals across Thailand access to legal, transparent, and cost-efficient wine importing."
+    },
+    "whyWeExist": {
+      "title": "Why We Exist",
+      "subtitle": "The Thai wine importing landscape has challenges that we're here to solve:",
+      "problems": {
+        "highMarkups": {
+          "title": "High Importer Markups",
+          "description": "Traditional importers add significant margins, making wines expensive for end customers"
+        },
+        "limitedSelection": {
+          "title": "Limited Selection",
+          "description": "Most importers focus on mass-market wines, leaving little room for unique or boutique producers"
+        },
+        "complexRegulations": {
+          "title": "Complex Import Regulations",
+          "description": "Thai import laws are complicated, with multiple licenses, permits, and compliance requirements"
+        },
+        "hiddenCosts": {
+          "title": "Hidden Costs & Fees",
+          "description": "Many services have unclear pricing structures with surprise charges and hidden fees"
+        }
+      },
+      "solution": "We created Wine Import Thailand to provide a transparent, cost-effective alternative — giving you direct access to the wines you want at prices that make sense."
+    },
+    "ourMission": {
+      "title": "Our Mission",
+      "description": "To democratize wine importing in Thailand by providing transparent, legal, and cost-effective import services that connect wine lovers with the wines they want — without the traditional barriers, markups, or complexity."
+    },
+    "whyWorkWithUs": {
+      "title": "Why Work With Us",
+      "features": {
+        "experience": {
+          "title": "5+ Years of Industry Experience",
+          "description": "Proven track record with hundreds of successful shipments"
+        },
+        "licensed": {
+          "title": "Licensed Importer (FDA, Excise, Customs)",
+          "description": "Full regulatory compliance and official certifications"
+        },
+        "legal": {
+          "title": "100% Legal & Compliant Process",
+          "description": "Every shipment meets Thai import requirements"
+        },
+        "transparent": {
+          "title": "Transparent Pricing — No Middlemen",
+          "description": "Clear fee structure with no hidden costs"
+        },
+        "support": {
+          "title": "Professional Personalized Support",
+          "description": "Dedicated team guidance throughout the process"
+        },
+        "reliable": {
+          "title": "Reliable Logistics, Storage, and Delivery",
+          "description": "Secure handling from customs to your door"
+        }
+      },
+      "cta": {
+        "title": "Ready to start?",
+        "description": "We handle the bureaucracy — you focus on the wine.",
+        "getQuote": "Get a Quote",
+        "contactUs": "Contact Us"
+      }
+    }
+  },
+  "ServicesPage": {
+    "productTypes": {
+      "title": "More Than Just Wine",
+      "subtitle": "While we specialize in wine, our license and expertise allow us to handle much more.",
+      "intro": "In addition to wine, we can import:",
+      "types": {
+        "spirits": {
+          "title": "Spirits & Liquors",
+          "description": "Complete range of alcoholic beverages and premium spirits"
+        },
+        "beverages": {
+          "title": "Non-Alcoholic Beverages",
+          "description": "Juices, soft drinks, specialty waters, and premium beverages"
+        },
+        "food": {
+          "title": "Food Products & Ingredients",
+          "description": "Cheese, cured meats, oils, sauces, and specialty food items"
+        }
+      },
+      "conclusion": "Whether you're sourcing for your restaurant, hotel, private club, retail shop or personal collection — we offer a complete, fully legal import solution."
+    },
+    "logisticsOptions": {
+      "title": "Logistics Options",
+      "subtitle": "Flexible shipping solutions to meet your timeline and budget requirements.",
+      "options": {
+        "sea": {
+          "title": "Sea Freight",
+          "description": "Cost-effective for large volumes with longer transit times"
+        },
+        "air": {
+          "title": "Air Freight",
+          "description": "Fast delivery for urgent shipments and smaller quantities"
+        },
+        "land": {
+          "title": "Land Transport",
+          "description": "Efficient overland shipping from neighboring countries"
+        }
+      }
+    },
+    "servicesList": {
+      "title": "Complete Import Services",
+      "subtitle": "We handle every aspect of the import process from start to finish:",
+      "services": {
+        "permits": {
+          "title": "Import License & Permits",
+          "description": "We operate under full FDA and Excise licenses, covering alcohol and food imports."
+        },
+        "fda": {
+          "title": "FDA Registration & Compliance",
+          "description": "We handle all product registration, health approvals, and compliance paperwork."
+        },
+        "customs": {
+          "title": "Customs Clearance",
+          "description": "We manage all customs formalities, taxes, duties, and documentation on your behalf."
+        },
+        "excise": {
+          "title": "Excise & Alcohol Tax Management",
+          "description": "We calculate, declare, and pay all applicable excise and local taxes, fully transparent."
+        },
+        "logistics": {
+          "title": "Logistics & Storage",
+          "description": "We coordinate international shipping, bonded storage, and domestic delivery directly to your location."
+        },
+        "documentation": {
+          "title": "Documentation & Legal Support",
+          "description": "We handle all necessary documentation for Thai regulatory compliance."
+        }
+      }
+    },
+    "clientTypes": {
+      "title": "Who We Serve",
+      "subtitle": "Our services cater to diverse clients across Thailand:",
+      "types": {
+        "restaurants": "Restaurants & Hotels",
+        "bars": "Bars & Nightlife",
+        "retail": "Retail & Wine Shops",
+        "private": "Private Collectors",
+        "corporate": "Corporate Events",
+        "wholesale": "Wholesalers & Distributors"
+      }
+    },
+    "whyChooseOurService": {
+      "title": "Why Choose Our Import Service",
+      "subtitle": "Experience the difference of working with Thailand's most trusted wine import specialists.",
+      "benefits": {
+        "costEffective": {
+          "title": "Cost-Effective",
+          "description": "Save up to 30% compared to traditional importers by eliminating middleman markups"
+        },
+        "fullService": {
+          "title": "Full-Service Solution",
+          "description": "From initial order to final delivery, we handle every step of the import process"
+        },
+        "expertise": {
+          "title": "Industry Expertise",
+          "description": "5+ years of experience with deep knowledge of Thai import regulations and procedures"
+        },
+        "transparency": {
+          "title": "Complete Transparency",
+          "description": "Clear pricing, regular updates, and full visibility into your shipment status"
+        },
+        "flexibility": {
+          "title": "Flexible Solutions",
+          "description": "Customized import solutions tailored to your specific needs and requirements"
+        },
+        "support": {
+          "title": "Dedicated Support",
+          "description": "Personal account management with responsive customer service throughout the process"
+        }
+      }
+    }
+  },
+  "ForProducersPage": {
+    "gatewayIntro": {
+      "title": "Your Gateway to the Thai Market",
+      "paragraph1": "Thailand's food & beverage market is growing rapidly, with strong demand for high-quality wines, spirits, and specialty food products from around the world.",
+      "paragraph2": "At Wine Import Thailand, we help overseas wineries, distilleries, and food producers legally and efficiently bring their products into Thailand — without the need to establish a local company or navigate complex Thai regulations on their own."
+    },
+    "producerServices": {
+      "title": "What We Offer to Overseas Producers",
+      "subtitle": "We act as your official legal importer, compliance partner, and commercial gateway into Thailand.",
+      "intro": "Our service includes:",
+      "services": {
+        "legal": {
+          "title": "Full legal import under our licenses",
+          "description": "Excise, Customs, Alcohol Permits - all covered"
+        },
+        "registration": {
+          "title": "Product registration & documentation",
+          "description": "Legal documentation, labeling compliance handled"
+        },
+        "tax": {
+          "title": "Full excise, customs, and tax handling",
+          "description": "Complete tax and regulatory compliance management"
+        },
+        "logistics": {
+          "title": "Global logistics by sea, air, or land",
+          "description": "Worldwide shipping solutions to Thailand"
+        },
+        "storage": {
+          "title": "Free zone & bonded warehouse storage",
+          "description": "Tax deferral until release with legal storage"
+        },
+        "distribution": {
+          "title": "Domestic stock management & controlled release",
+          "description": "Managed distribution to local partners"
+        },
+        "network": {
+          "title": "Access to our network",
+          "description": "Restaurants, hotels, private clients, and retailers"
+        },
+        "partnership": {
+          "title": "Partnership with local distributors",
+          "description": "Support your sales team and deliver across Thailand"
+        }
+      }
+    },
+    "whatYouDontNeed": {
+      "title": "What You DON'T Need",
+      "subtitle": "Unlike other import solutions, with us you don't need to:",
+      "items": {
+        "company": "Set up a Thai company or legal entity",
+        "licenses": "Apply for your own import licenses (FDA, Excise, Customs)",
+        "office": "Establish a physical office or presence in Thailand",
+        "staff": "Hire local staff or Thai business partners",
+        "regulations": "Navigate complex Thai regulations on your own",
+        "taxes": "Manage Thai tax obligations and compliance"
+      },
+      "conclusion": "We handle all the legal, regulatory, and operational complexity — you focus on producing great products."
+    },
+    "commercialModels": {
+      "title": "Commercial Models",
+      "subtitle": "Flexible partnership structures to suit your business needs:",
+      "models": {
+        "direct": {
+          "title": "Direct Import Partnership",
+          "description": "We import your products and distribute them to your customers in Thailand"
+        },
+        "wholesale": {
+          "title": "Wholesale Distribution",
+          "description": "We act as your official Thai distributor, selling to local businesses"
+        },
+        "private": {
+          "title": "Import Service with Existing Distributor",
+          "description": "Import service when you have your own distributor in Thailand"
+        },
+        "project": {
+          "title": "Project-Based Import",
+          "description": "One-time or occasional imports for specific events or customers"
+        }
+      }
+    },
+    "producerAdvantages": {
+      "title": "Why International Producers Choose Us",
+      "advantages": {
+        "marketEntry": {
+          "title": "Fast Market Entry",
+          "description": "Start selling in Thailand within weeks, not months"
+        },
+        "costEffective": {
+          "title": "Cost-Effective Solution",
+          "description": "No need for expensive local setup or ongoing fixed costs"
+        },
+        "expertise": {
+          "title": "Local Market Expertise",
+          "description": "Navigate Thai business culture and regulations with confidence"
+        },
+        "network": {
+          "title": "Established Distribution Network",
+          "description": "Access our existing relationships with restaurants, hotels, and retailers"
+        },
+        "compliance": {
+          "title": "Full Legal Compliance",
+          "description": "Ensure 100% regulatory compliance with all Thai import laws"
+        },
+        "flexibility": {
+          "title": "Scalable & Flexible",
+          "description": "Start small and scale up as your Thai market presence grows"
+        }
+      },
+      "cta": {
+        "title": "Ready to Enter the Thai Market?",
+        "description": "Contact us today to discuss how we can help bring your products to Thailand.",
+        "contact": "Contact Us Today"
+      }
+    }
+  },
+  "PrivacyPolicyPage": {
+    "effectiveDate": "Effective Date:",
+    "effectiveDateValue": "June 15, 2025",
+    "introduction": "Wine Import Thailand (operated by Primeline Trading Co., Ltd., \"we\", \"our\", or \"us\") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, store, and protect your information when you visit our website or use our services.",
+    "agreement": "By using our website, you agree to this Privacy Policy.",
+    "whoWeAre": {
+      "title": "Who We Are",
+      "description": "Wine Import Thailand is a licensed importer and logistics service provider offering import services for wine, spirits, non-alcoholic beverages, and food products into Thailand. Our full company information:",
+      "companyInfo": {
+        "name": "Primeline Trading Co., Ltd.",
+        "exciseLicense": "Excise Import License: 0105562203153-3-002",
+        "fdaLicense": "FDA License: 10-3-19263",
+        "location": "Bangkok, Thailand",
+        "email": "Email:",
+        "phone": "Phone: +66 61 117 3775"
+      }
+    },
+    "informationWeCollect": {
+      "title": "Information We Collect",
+      "description": "We collect both personal and business information when you interact with us, including:",
+      "items": {
+        "personal": "Name, email address, phone number, company name",
+        "business": "Business activity, shipping information, product information",
+        "communication": "Communication records (emails, contact forms, quote requests)",
+        "calculator": "Information provided when using our import calculator (estimates only)",
+        "technical": "Technical information (IP address, browser type, cookies, pages visited)"
+      }
+    },
+    "howWeUse": {
+      "title": "How We Use Your Information",
+      "description": "We use your information to:",
+      "purposes": {
+        "inquiries": "Respond to inquiries and provide quotations",
+        "services": "Deliver import services you request",
+        "contracts": "Manage contracts, invoices, and legal compliance",
+        "support": "Provide customer support and ongoing services",
+        "improvement": "Improve our website, services, and tools (such as the import calculator)",
+        "communications": "Send important operational or legal communications",
+        "legal": "Fulfill legal obligations under Thai law"
+      }
+    },
+    "calculatorDisclaimer": {
+      "title": "Import Calculator Disclaimer",
+      "description": "Our website offers an import cost calculator to help estimate possible import costs based on your provided data. These results are provided for informational purposes only and may vary depending on multiple factors including, but not limited to, product type, volume, regulatory changes, taxes, fees, or customs inspections. Final costs will be determined only after full documentation, product registration, and customs clearance."
+    },
+    "legalBasis": {
+      "title": "Legal Basis for Processing (GDPR Compliance)",
+      "description": "For visitors and partners from the European Union, we process your data under the following legal bases:",
+      "bases": {
+        "contract": "Performance of a contract or to take steps prior to entering into a contract",
+        "legal": "Compliance with legal obligations",
+        "legitimate": "Legitimate business interests (communication, service improvement, customer support)",
+        "consent": "Consent (where applicable, such as marketing emails or newsletter subscriptions)"
+      },
+      "withdrawal": "You may withdraw consent at any time by contacting us."
+    },
+    "dataSharing": {
+      "title": "Data Sharing and Disclosure",
+      "description": "We may share your information only as required to perform our services or by legal obligation:",
+      "parties": {
+        "internal": "Internal staff and authorized service providers (IT, logistics, customs brokers)",
+        "government": "Government agencies (FDA, Excise Department, Customs, etc.)",
+        "advisors": "Legal and tax advisors as required"
+      },
+      "noSelling": "No personal information is sold, rented, or exchanged with third parties for marketing."
+    },
+    "dataRetention": {
+      "title": "Data Retention",
+      "description": "We retain your data only as long as necessary to fulfill legal, regulatory, operational, and contractual obligations."
+    },
+    "dataSecurity": {
+      "title": "Data Security",
+      "description": "We implement appropriate administrative, technical, and physical security measures to protect your information from unauthorized access, alteration, disclosure, or destruction."
+    },
+    "yourRights": {
+      "title": "Your Rights (EU & Global)",
+      "description": "You may request to:",
+      "rights": {
+        "access": "Access your personal data",
+        "correct": "Correct or update your data",
+        "delete": "Delete your personal data where legally permissible",
+        "restrict": "Restrict or object to processing",
+        "withdraw": "Withdraw consent at any time",
+        "portability": "Receive a copy of your data in portable format (where applicable)"
+      },
+      "contact": "To exercise any of these rights, please contact us at:"
+    },
+    "cookies": {
+      "title": "Cookies & Tracking",
+      "description": "Our website uses cookies and similar tracking technologies to:",
+      "purposes": {
+        "functionality": "Improve site functionality and user experience",
+        "analytics": "Analyze website usage (Google Analytics or similar tools)",
+        "preferences": "Remember user preferences"
+      },
+      "control": "You may control or disable cookies via your browser settings. Disabling cookies may affect your user experience.",
+      "noAdvertising": "We do not use cookies for targeted advertising or remarketing."
+    },
+    "internationalTransfers": {
+      "title": "International Data Transfers",
+      "description": "As our business may involve international clients, your data may be processed or stored outside of your country, including in Thailand. We ensure appropriate safeguards for data transfers where legally required."
+    },
+    "thirdPartyLinks": {
+      "title": "Third-Party Links",
+      "description": "Our website may contain links to third-party sites. We are not responsible for the privacy practices of external websites."
+    },
+    "changes": {
+      "title": "Changes to This Privacy Policy",
+      "description": "We reserve the right to update this Privacy Policy. Any changes will be posted on this page with the updated effective date."
+    },
+    "contact": {
+      "title": "Contact Information",
+      "description": "If you have any questions or concerns, please contact:",
+      "info": {
+        "title": "Wine Import Thailand",
+        "company": "Primeline Trading Co., Ltd.",
+        "location": "Bangkok, Thailand",
+        "email": "Email:",
+        "phone": "Phone: +66 61 117 3775"
+      }
+    }
+  },
+  "TermsConditionsPage": {
+    "effectiveDate": "Effective Date:",
+    "effectiveDateValue": "June 15, 2025",
+    "introduction": "Welcome to Wine Import Thailand (operated by Primeline Trading Co., Ltd.). These Terms and Conditions (\"Terms\") govern your use of our website: wineimportthailand.com (the \"Website\").",
+    "agreement": "By accessing or using this Website, you agree to be bound by these Terms. If you do not agree, please do not use the Website.",
+    "useOfWebsite": {
+      "title": "Use of Website",
+      "description": "You agree to use this Website only for lawful purposes. You must not:",
+      "restrictions": {
+        "unauthorized": "Attempt to gain unauthorized access to any part of the Website",
+        "malicious": "Use the Website to transmit malicious code, viruses, or harmful content",
+        "harmful": "Use the Website in any way that may harm, damage, or overload our infrastructure",
+        "copying": "Copy, distribute, or reproduce any content without prior written permission"
+      },
+      "termination": "We reserve the right to suspend or terminate access to the Website for any user who violates these Terms."
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "ownership": "All content on this Website, including text, graphics, logos, icons, images, and software, is the property of Wine Import Thailand or its licensors and is protected by intellectual property laws.",
+      "restrictions": "You may not copy, reproduce, republish, upload, post, transmit, or distribute any part of this Website without our prior written consent."
+    },
+    "accuracyOfInformation": {
+      "title": "Accuracy of Information",
+      "description": "We make reasonable efforts to ensure that the information provided on this Website is accurate and up-to-date. However:",
+      "disclaimers": {
+        "guarantee": "We do not guarantee the completeness, accuracy, or reliability of the information",
+        "changes": "Information may change at any time without notice",
+        "asIs": "The Website is provided \"as is\" and \"as available\""
+      },
+      "pricing": "All pricing, service descriptions, or calculations shown on the Website (including via our Import Calculator) are for general informational purposes only and are not legally binding offers or final quotations."
+    },
+    "calculatorDisclaimer": {
+      "title": "Import Calculator Disclaimer",
+      "description": "The import calculator provided on our Website is intended for estimation purposes only. Final import costs may vary depending on multiple factors including:",
+      "factors": {
+        "customs": "Customs regulations",
+        "classification": "Product classification",
+        "duties": "Duties, taxes, and fees",
+        "shipping": "Shipping conditions"
+      },
+      "confirmation": "Actual import costs will be confirmed by us after full review of your products and documentation."
+    },
+    "thirdPartyLinks": {
+      "title": "Third-Party Links",
+      "description": "Our Website may contain links to external websites. We are not responsible for the content, privacy policies, or practices of any third-party sites."
+    },
+    "limitationOfLiability": {
+      "title": "Limitation of Liability",
+      "description": "To the maximum extent permitted by law:",
+      "exclusions": {
+        "damages": "We shall not be liable for any direct, indirect, incidental, consequential, or punitive damages resulting from your access to or use of the Website",
+        "ownRisk": "You use this Website entirely at your own risk"
+      }
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "description": "Your use of the Website is also subject to our Privacy Policy, which governs how we collect, use, and protect your personal data."
+    },
+    "changesToTerms": {
+      "title": "Changes to Terms",
+      "description": "We reserve the right to modify or update these Terms and Conditions at any time. Updated versions will be posted on this page. Continued use of the Website after any changes means you accept the updated Terms."
+    },
+    "governingLaw": {
+      "title": "Governing Law",
+      "description": "These Terms shall be governed by and interpreted in accordance with the laws of the Kingdom of Thailand."
+    },
+    "contact": {
+      "title": "Contact Information",
+      "description": "For any questions or concerns about these Terms, please contact:",
+      "info": {
+        "title": "Wine Import Thailand",
+        "company": "Primeline Trading Co., Ltd.",
+        "location": "Bangkok, Thailand",
+        "email": "Email:",
+        "phone": "Phone: +66 61 117 3775"
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our import specialists",
+    "description": "Ready to start importing to Thailand? Contact our team for personalized assistance with your import needs.",
+    "form": {
+      "title": "Send Us a Message",
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Enter your full name"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Enter your email address"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "Enter your phone number (optional)"
+      },
+      "company": {
+        "label": "Company Name",
+        "placeholder": "Enter your company name (optional)"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "What can we help you with?"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us about your import requirements, product details, quantities, or any questions you have..."
+      },
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.",
+      "error": "Sorry, there was an error sending your message. Please try again or contact us directly."
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "Reach out to us directly using any of the methods below:",
+      "company": {
+        "name": "Wine Import Thailand",
+        "legalName": "Primeline Trading Co., Ltd.",
+        "address": "29, 10 Soi Sri Aksorn, Thung Maha Mek, Sathon, Bangkok 10120",
+        "email": "Email:",
+        "phone": "Phone: +66 61 117 3775",
+        "licenses": {
+          "title": "Licensed Import Company",
+          "excise": "Excise Import License: 0105562203153-3-002",
+          "fda": "FDA License: 10-3-19263"
+        }
+      },
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM",
+        "timezone": "Bangkok Time (GMT+7)"
+      },
+      "response": {
+        "title": "Response Time",
+        "description": "We typically respond to all inquiries within 24 hours during business days."
+      }
+    }
+  }
+} 
