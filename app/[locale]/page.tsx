@@ -33,8 +33,8 @@ export default async function HomePage({
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-4xl lg:text-6xl font-serif font-light text-wine-charcoal leading-tight">
-              Boutique French Wines — 
-              <span className="block text-wine-gold">Directly Imported for Thailand's Hospitality Industry.</span>
+              Boutique French Wines 
+              <span className="block text-wine-gold">Directly Imported for Thailand's Hospitality Industry</span>
             </h1>
             
             <p className="text-xl lg:text-2xl font-light text-wine-700 leading-relaxed max-w-3xl mx-auto">
@@ -87,12 +87,11 @@ export default async function HomePage({
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
                 {[
-                  'Restaurants — from casual to fine dining',
+                  'Restaurants',
                   'Hotels & Resorts', 
                   'Bars & Lounges',
                   'Cafés and Bistros',
                   'Catering & Event Companies',
-                  'Specialty Retail & Delis',
                   'Distributors & Wholesalers'
                 ].map((business, index) => (
                   <div key={index} className="bg-white p-6 text-center">
