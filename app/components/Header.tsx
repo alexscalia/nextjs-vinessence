@@ -43,7 +43,7 @@ const Header = () => {
   ];
 
   return (
-    <header className={`sticky top-0 z-50 w-full border-b border-wine-200/30 bg-wine-cream/95 backdrop-blur supports-[backdrop-filter]:bg-wine-cream/90 transition-all duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
+    <header className={`sticky top-0 z-50 w-full border-b border-wine-200/30 bg-wine-cream transition-all duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
       <div className="container mx-auto px-4">
         <div className={`flex items-center justify-between transition-all duration-300 ${isScrolled ? 'h-16' : 'h-24'}`}>
           {/* Logo */}
