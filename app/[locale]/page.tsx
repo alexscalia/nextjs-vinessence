@@ -29,18 +29,7 @@ export default async function HomePage({
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.unsplash.com/photo-1586370434639-0fe43b2d32d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-            alt="French vineyard landscape"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-wine-charcoal/60"></div>
-        </div>
+      <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-wine-800 via-wine-700 to-wine-900">
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
