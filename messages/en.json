@@ -67,5 +67,15 @@
   "language": {
     "english": "English",
     "thai": "ไทย"
+  },
+  "Metadata": {
+    "site": {
+      "name": "VINESSENCE - Boutique French Wine Imports Thailand"
+    },
+    "home": {
+      "title": "VINESSENCE | Premium French Wine Imports | Thailand",
+      "description": "Discover exclusive boutique French wines imported directly to Thailand. Premium selections from Burgundy, Bordeaux, Champagne & more. Serving restaurants, hotels, bars & hospitality industry.",
+      "keywords": "French wine Thailand, boutique wine imports, premium wine Thailand, wine distributor Bangkok, French wine restaurant, Burgundy wine Thailand, Bordeaux wine import, Champagne Thailand, wine hospitality Thailand"
+    }
   }
 }

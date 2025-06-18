@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, ChevronDown, Languages } from 'lucide-react';
+import { Menu, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
@@ -12,8 +12,6 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
 } from './ui/navigation-menu';
 import {
   DropdownMenu,
@@ -53,14 +51,6 @@ const Header = () => {
     { name: t('about'), href: '/about' },
     { name: t('wines'), href: '/wines' },
     { name: t('producers'), href: '/producers' },
-    { 
-      name: t('resources'), 
-      href: '/blog',
-      dropdown: [
-        { name: t('blog'), href: '/blog' },
-        { name: t('events'), href: '/events' },
-      ]
-    },
     { name: t('contact'), href: '/contact' },
   ];
 
@@ -70,8 +60,6 @@ const Header = () => {
     { name: t('about'), href: '/about' },
     { name: t('wines'), href: '/wines' },
     { name: t('producers'), href: '/producers' },
-    { name: t('blog'), href: '/blog' },
-    { name: t('events'), href: '/events' },
     { name: t('contact'), href: '/contact' },
   ];
 
@@ -81,27 +69,14 @@ const Header = () => {
         <div className={`flex items-center justify-between transition-all duration-300 ${isScrolled ? 'h-16' : 'h-24'}`}>
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="relative">
-              {/* Full Logo - shown when header is tall */}
-              <Image
-                src="/images/vinessence-logo-full.svg"
-                alt="Vinessence"
-                width={isScrolled ? 0 : 120}
-                height={isScrolled ? 0 : 48}
-                className={`transition-all duration-300 ${isScrolled ? 'opacity-0 w-0 h-0' : 'opacity-100'}`}
-                priority
-              />
-              
-              {/* Text Logo - shown when header is small */}
-              <Image
-                src="/images/vinessence-logo-text.svg"
-                alt="Vinessence"
-                width={isScrolled ? 100 : 0}
-                height={isScrolled ? 32 : 0}
-                className={`transition-all duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0 w-0 h-0'} ${isScrolled ? '' : 'absolute top-0 left-0'}`}
-                priority
-              />
-            </div>
+            <Image
+              src="/images/vinessence-logo-full-horizontal.svg"
+              alt="Vinessence"
+              width={160}
+              height={48}
+              className="transition-all duration-300"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -110,36 +85,14 @@ const Header = () => {
               <NavigationMenuList className="flex space-x-1">
                 {navigationItems.map((item) => (
                   <NavigationMenuItem key={item.name}>
-                    {item.dropdown ? (
-                      <>
-                        <NavigationMenuTrigger className={`group inline-flex w-max items-center justify-center bg-transparent px-4 py-2 text-sm font-light text-wine-charcoal tracking-wide transition-all duration-300 hover:text-wine-gold focus:text-wine-gold focus:outline-none relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-wine-gold after:transition-all after:duration-300 hover:after:w-full ${isScrolled ? 'h-10' : 'h-12'}`}>
-                          {item.name}
-                        </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                          <div className="w-48 p-2">
-                            {item.dropdown.map((subItem) => (
-                              <NavigationMenuLink key={subItem.name} asChild>
-                                <Link
-                                  href={subItem.href}
-                                  className="block px-3 py-2 text-sm text-wine-charcoal hover:text-wine-gold hover:bg-wine-50 rounded-md transition-colors"
-                                >
-                                  {subItem.name}
-                                </Link>
-                              </NavigationMenuLink>
-                            ))}
-                          </div>
-                        </NavigationMenuContent>
-                      </>
-                    ) : (
-                      <NavigationMenuLink asChild>
-                        <Link
-                          href={item.href}
-                          className={`group inline-flex w-max items-center justify-center bg-transparent px-4 py-2 text-sm font-light text-wine-charcoal tracking-wide transition-all duration-300 hover:text-wine-gold focus:text-wine-gold focus:outline-none relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-wine-gold after:transition-all after:duration-300 hover:after:w-full ${isScrolled ? 'h-10' : 'h-12'}`}
-                        >
-                          {item.name}
-                        </Link>
-                      </NavigationMenuLink>
-                    )}
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href={item.href}
+                        className={`group inline-flex w-max items-center justify-center bg-transparent px-4 py-2 text-sm font-medium text-gray-800 tracking-wide transition-all duration-300 hover:text-wine-gold hover:bg-wine-50 focus:text-wine-gold focus:outline-none rounded-md ${isScrolled ? 'h-10' : 'h-12'}`}
+                      >
+                        {item.name}
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
@@ -148,9 +101,8 @@ const Header = () => {
             {/* Language Switcher */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="flex items-center space-x-2 text-wine-charcoal hover:text-wine-gold">
-                  <Languages className="h-4 w-4" />
-                  <span className="text-sm font-light">{locale.toUpperCase()}</span>
+                <Button variant="ghost" size="sm" className="flex items-center gap-0.5 text-gray-800 hover:text-wine-gold cursor-pointer">
+                  <span className="text-sm font-medium">{locale.toUpperCase()}</span>
                   <ChevronDown className="h-3 w-3" />
                 </Button>
               </DropdownMenuTrigger>
@@ -177,10 +129,10 @@ const Header = () => {
               <div className="flex flex-col space-y-4 mt-8">
                 <div className="flex flex-col mb-6">
                   <Image
-                    src="/images/vinessence-logo-text.svg"
+                    src="/images/vinessence-logo-full-horizontal.svg"
                     alt="Vinessence"
-                    width={120}
-                    height={40}
+                    width={140}
+                    height={42}
                     className="mb-2"
                   />
                 </div>

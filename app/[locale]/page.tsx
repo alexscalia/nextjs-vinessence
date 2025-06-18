@@ -3,6 +3,7 @@ import { generateMetadata as generatePageMetadata } from '../../lib/metadata';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function generateStaticParams() {
   return [{locale: 'en'}, {locale: 'th'}];
@@ -75,15 +76,14 @@ export default async function HomePage({
                 {t('philosophy.description')}
               </p>
             </div>
-            <div className="relative h-96 lg:h-[500px] bg-gradient-to-br from-wine-200 to-wine-300 rounded-lg flex items-center justify-center">
-              <div className="text-center text-wine-700">
-                <div className="w-16 h-16 bg-wine-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <p className="text-sm font-light">{t('philosophy.image_alt')}</p>
-              </div>
+            <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden">
+              <Image
+                src="/images/philosophy-winemaker.webp"
+                alt={t('philosophy.image_alt')}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>
@@ -98,15 +98,14 @@ export default async function HomePage({
             </h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-              <div className="relative h-80 lg:h-96 bg-gradient-to-br from-wine-300 to-wine-400 rounded-lg flex items-center justify-center">
-                <div className="text-center text-wine-700">
-                  <div className="w-16 h-16 bg-wine-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" />
-                    </svg>
-                  </div>
-                  <p className="text-sm font-light">{t('who_we_serve.image_alt')}</p>
-                </div>
+              <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden">
+                <Image
+                  src="/images/hospitality-restaurant.webp"
+                  alt={t('who_we_serve.image_alt')}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="space-y-6">
                 <p className="text-lg font-light text-wine-700 leading-relaxed">
@@ -169,15 +168,14 @@ export default async function HomePage({
                 </div>
               </div>
               
-              <div className="relative h-96 lg:h-[500px] bg-gradient-to-br from-wine-400 to-wine-500 rounded-lg flex items-center justify-center">
-                <div className="text-center text-wine-100">
-                  <div className="w-16 h-16 bg-wine-700 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-wine-100" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-sm font-light">{t('why_boutique.image_alt')}</p>
-                </div>
+              <div className="relative h-80 lg:h-96 rounded-lg overflow-hidden">
+                <Image
+                  src="/images/boutique-wines.webp"
+                  alt={t('why_boutique.image_alt')}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>
