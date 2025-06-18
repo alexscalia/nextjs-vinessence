@@ -42,3 +42,4 @@ next-env.d.ts
 
 # original images backup (large files, not for git)
 /assets/original-images
+public/videos/*.mp4
