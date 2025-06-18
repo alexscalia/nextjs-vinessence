@@ -72,8 +72,8 @@ const Header = () => {
             <Image
               src="/images/vinessence-logo-full-horizontal.svg"
               alt="Vinessence"
-              width={160}
-              height={48}
+              width={280}
+              height={84}
               className="transition-all duration-300"
               priority
             />
@@ -131,8 +131,8 @@ const Header = () => {
                   <Image
                     src="/images/vinessence-logo-full-horizontal.svg"
                     alt="Vinessence"
-                    width={140}
-                    height={42}
+                    width={220}
+                    height={66}
                     className="mb-2"
                   />
                 </div>
