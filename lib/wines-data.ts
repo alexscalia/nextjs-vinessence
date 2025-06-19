@@ -28,7 +28,7 @@ export interface WineRegion {
   wines: Wine[];
 }
 
-export const wineRegions: WineRegion[] = [
+export const winesByRegion: WineRegion[] = [
   {
     "region_slug": "champagne",
     "wines": [
@@ -205,7 +205,7 @@ export const wineRegions: WineRegion[] = [
 ];
 
 export function getWineBySlug(slug: string): (Wine & { region_slug: string }) | undefined {
-  for (const region of wineRegions) {
+  for (const region of winesByRegion) {
     const wine = region.wines.find(wine => wine.slug === slug);
     if (wine) return { ...wine, region_slug: region.region_slug };
   }
@@ -214,7 +214,7 @@ export function getWineBySlug(slug: string): (Wine & { region_slug: string }) | 
 
 export function getAllWineSlugs(): string[] {
   const slugs: string[] = [];
-  for (const region of wineRegions) {
+  for (const region of winesByRegion) {
     slugs.push(...region.wines.map(wine => wine.slug));
   }
   return slugs;
@@ -222,7 +222,7 @@ export function getAllWineSlugs(): string[] {
 
 export function getAllWines(): (Wine & { region_slug: string })[] {
   const allWines: (Wine & { region_slug: string })[] = [];
-  for (const region of wineRegions) {
+  for (const region of winesByRegion) {
     allWines.push(...region.wines.map(wine => ({ ...wine, region_slug: region.region_slug })));
   }
   return allWines;

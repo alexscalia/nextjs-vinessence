@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { wineRegions } from '../../../lib/wines-data';
+import { winesByRegion } from '../../../lib/wines-data';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Badge } from '../ui/badge';
 import Link from 'next/link';
@@ -31,7 +31,7 @@ export default function WinesListSection() {
           </p>
         </div>
 
-        {wineRegions.map((region) => (
+        {winesByRegion.map((region) => (
           <div key={region.region_slug} className="mb-16">
             {/* Region Title */}
             <div className="text-center mb-8">
