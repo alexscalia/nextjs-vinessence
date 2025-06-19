@@ -21,12 +21,7 @@ export default function WinesListSection() {
 
   // Function to format text with line breaks
   const formatText = (text: string) => {
-    return text.split('\\n').map((line, index, array) => (
-      <span key={index}>
-        {line}
-        {index < array.length - 1 && <br />}
-      </span>
-    ));
+    return text.replace(/\\n/g, '<br>');
   };
 
   return (
@@ -68,9 +63,10 @@ export default function WinesListSection() {
                           <span className="text-gray-500 text-sm ml-1">/5</span>
                         </div>
                       </div>
-                      <CardTitle className="text-lg leading-tight group-hover:text-red-700 transition-colors break-words">
-                        {formatText(wine.name)}
-                      </CardTitle>
+                      <CardTitle 
+                        className="text-lg leading-tight group-hover:text-red-700 transition-colors break-words"
+                        dangerouslySetInnerHTML={{ __html: formatText(wine.name) }}
+                      />
                       <p className="text-gray-600 text-sm">{getLocalizedContent(wine, 'region')}</p>
                     </CardHeader>
                     <CardContent>
