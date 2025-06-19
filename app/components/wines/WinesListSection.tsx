@@ -64,29 +64,37 @@ export default function WinesListSection() {
                       <p className="text-gray-600">{getLocalizedContent(wine, 'region')}</p>
                     </CardHeader>
                     <CardContent>
-                      <div className="space-y-3">
+                      <div className="space-y-4">
                         <div>
-                          <h4 className="font-semibold text-gray-900 mb-1">
+                          <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                            <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
                             {t('grape_varieties')}
                           </h4>
-                          <p className="text-sm text-gray-600">{getLocalizedContent(wine, 'grape_varieties')}</p>
+                          <p className="text-sm text-gray-600 pl-4">{getLocalizedContent(wine, 'grape_varieties')}</p>
                         </div>
                         
                         <div>
-                          <h4 className="font-semibold text-gray-900 mb-1">
+                          <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                            <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
                             {t('tasting_notes')}
                           </h4>
-                          <p className="text-sm text-gray-600 line-clamp-3">
+                          <p className="text-sm text-gray-600 line-clamp-3 pl-4">
                             {getLocalizedContent(wine, 'tasting_notes')}
                           </p>
                         </div>
                         
-                        <div className="flex justify-between items-center pt-4 border-t">
-                          <div className="text-sm text-gray-600">
-                            <span className="font-medium">{wine.abv}</span> | {wine.service_temperature}
+                        <div className="grid grid-cols-3 gap-2 pt-4 border-t border-gray-100">
+                          <div className="text-center">
+                            <p className="text-xs text-gray-500 mb-1">ABV</p>
+                            <p className="text-sm font-medium text-gray-900">{wine.abv}</p>
                           </div>
-                          <div className="text-lg font-bold text-gray-900">
-                            ₿{wine.price}
+                          <div className="text-center">
+                            <p className="text-xs text-gray-500 mb-1">Serve</p>
+                            <p className="text-sm font-medium text-gray-900">{wine.service_temperature}</p>
+                          </div>
+                          <div className="text-center">
+                            <p className="text-xs text-gray-500 mb-1">SKU</p>
+                            <p className="text-sm font-medium text-gray-900">{wine.sku}</p>
                           </div>
                         </div>
                       </div>
