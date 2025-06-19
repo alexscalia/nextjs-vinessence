@@ -3,6 +3,7 @@ import { generateMetadata as generatePageMetadata } from '../../../lib/metadata'
 import { Metadata } from 'next';
 import WinesHeroSection from '../../components/wines/WinesHeroSection';
 import WinesByRegionSection from '../../components/wines/WinesByRegionSection';
+import WinesListSection from '../../components/wines/WinesListSection';
 
 export function generateStaticParams() {
   return [{locale: 'en'}, {locale: 'th'}];
@@ -30,6 +31,7 @@ export default async function WinesPage({
   return (
     <div className="min-h-screen bg-white">
       <WinesHeroSection />
+      <WinesListSection />
       <WinesByRegionSection />
     </div>
   );

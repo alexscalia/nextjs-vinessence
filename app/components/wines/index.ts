@@ -1,2 +1,3 @@
 export { default as WinesHeroSection } from './WinesHeroSection';
-export { default as WinesByRegionSection } from './WinesByRegionSection'; 
+export { default as WinesByRegionSection } from './WinesByRegionSection';
+export { default as WinesListSection } from './WinesListSection'; 

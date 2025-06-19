@@ -90,7 +90,25 @@
       "title": "Interested in Our Wines?",
       "description": "Contact us to learn more about our portfolio and discuss how we can serve your business.",
       "button": "Contact Our Team"
-    }
+    },
+    "our_collection": "Our Wine Collection",
+    "collection_description": "Discover our carefully curated selection of boutique French wines, each chosen for its exceptional quality and unique character.",
+    "grape_varieties": "Grape Varieties",
+    "tasting_notes": "Tasting Notes"
+  },
+  "wine": {
+    "the_estate": "The Estate",
+    "terroir": "Terroir",
+    "vinification": "Vinification",
+    "tasting_notes": "Tasting Notes",
+    "pairing": "Food Pairing",
+    "wine_details": "Wine Details",
+    "rating": "Rating",
+    "price": "Price",
+    "abv": "ABV",
+    "service_temperature": "Service Temperature",
+    "sku": "SKU",
+    "vintage": "Vintage"
   },
   "about": {
     "hero": {
