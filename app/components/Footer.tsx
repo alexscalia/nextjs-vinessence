@@ -1,8 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 const Footer = () => {
+  const t = useTranslations();
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
@@ -95,7 +97,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-lg mb-4">{t('footer.quick_links')}</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -112,7 +114,7 @@ const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Resources</h4>
+            <h4 className="font-semibold text-lg mb-4">{t('footer.resources')}</h4>
             <ul className="space-y-2">
               {resources.map((link) => (
                 <li key={link.name}>
@@ -129,16 +131,16 @@ const Footer = () => {
 
           {/* Business Hours & Additional Info */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Business Hours</h4>
+            <h4 className="font-semibold text-lg mb-4">{t('footer.business_hours')}</h4>
             <div className="space-y-2 text-sm text-white">
               <p>Monday - Friday: 10.00 - 18.00</p>
             </div>
             
             <div className="mt-6">
-              <h5 className="font-medium mb-2">Certifications</h5>
+              <h5 className="font-medium mb-2">{t('footer.certifications')}</h5>
               <p className="text-xs text-white">
-                Licensed Wine Importer<br />
-                Thai Import/Export License
+                {t('footer.licensed_importer')}<br />
+                {t('footer.thai_license')}
               </p>
             </div>
           </div>
@@ -148,17 +150,17 @@ const Footer = () => {
         <div className="border-t border-wine-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-white">
-              <p>© {currentYear} VINESSENCE CO., LTD. All rights reserved.</p>
+              <p>{t('footer.copyright', { year: currentYear })}</p>
             </div>
             <div className="flex space-x-6 text-sm">
               <Link href="/privacy" className="text-white hover:text-gray-200 transition-colors">
-                Privacy Policy
+                {t('footer.privacy_policy')}
               </Link>
               <Link href="/terms" className="text-white hover:text-gray-200 transition-colors">
-                Terms of Service
+                {t('footer.terms_of_service')}
               </Link>
               <Link href="/shipping" className="text-white hover:text-gray-200 transition-colors">
-                Shipping Policy
+                {t('footer.shipping_policy')}
               </Link>
             </div>
           </div>

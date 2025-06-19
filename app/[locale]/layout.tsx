@@ -1,8 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Montserrat } from "next/font/google";
 import "../globals.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import LayoutWrapper from "../components/LayoutWrapper";
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '../../i18n/routing';
@@ -92,15 +91,11 @@ export default async function LocaleLayout({
         {/* Performance optimizations */}
       </head>
       <body className="font-montserrat antialiased" suppressHydrationWarning={true}>
-        <div className="min-h-screen flex flex-col">
-          <NextIntlClientProvider messages={messages}>
-            <Header />
-            <main className="flex-1">
-              {children}
-            </main>
-            <Footer />
-          </NextIntlClientProvider>
-        </div>
+        <NextIntlClientProvider messages={messages}>
+          <LayoutWrapper locale={locale}>
+            {children}
+          </LayoutWrapper>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

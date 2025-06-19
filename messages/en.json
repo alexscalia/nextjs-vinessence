@@ -180,6 +180,27 @@
       }
     }
   },
+  "age_verification": {
+    "title": "Age Verification Required",
+    "subtitle": "Welcome to VINESSENCE",
+    "disclaimer": "This website contains information about alcoholic beverages. By Thai law, you must be at least 18 years old to access this content.",
+    "question": "Are you 18 years of age or older?",
+    "yes_button": "Yes, I am 18 or older",
+    "no_button": "No, I am under 18",
+    "legal_text": "By clicking 'Yes', you confirm that you are of legal drinking age in Thailand and agree to our terms of use."
+  },
+  "footer": {
+    "copyright": "© 2024-{year} Vinessence Co., Ltd. All rights reserved.",
+    "business_hours": "Business Hours",
+    "quick_links": "Quick Links",
+    "resources": "Resources",
+    "certifications": "Certifications",
+    "licensed_importer": "Licensed Wine Importer",
+    "thai_license": "Thai Import/Export License",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
+    "shipping_policy": "Shipping Policy"
+  },
   "Metadata": {
     "site": {
       "name": "VINESSENCE - Boutique French Wine Imports Thailand"

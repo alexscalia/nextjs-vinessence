@@ -49,9 +49,7 @@ export default async function WinePage({ params }: WinePageProps) {
 
   const formatText = (text: string | undefined) => {
     if (!text) return <div>-</div>;
-    return text.split('\n').map((line, index) => (
-      <div key={index}>{line}</div>
-    ));
+    return <div dangerouslySetInnerHTML={{ __html: text }} />;
   };
 
   return (
@@ -72,9 +70,10 @@ export default async function WinePage({ params }: WinePageProps) {
             <Badge variant="secondary" className="mb-4">
               {wine.vintage}
             </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              {wine.name}
-            </h1>
+            <h1 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+              dangerouslySetInnerHTML={{ __html: wine.name }}
+            />
             <p className="text-xl text-gray-300 mb-4">{getLocalizedContent('region')}</p>
             <p className="text-lg text-gray-400">{getLocalizedContent('grape_varieties')}</p>
           </div>
