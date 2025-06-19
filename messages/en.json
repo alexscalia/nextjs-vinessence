@@ -68,6 +68,30 @@
     "english": "English",
     "thai": "ไทย"
   },
+  "wines": {
+    "hero": {
+      "title": "Wine Portfolio",
+      "subtitle": "Discover Our Curated Collection of French Wines"
+    },
+    "portfolio": {
+      "title": "Wines by Region",
+      "description": "Explore our carefully selected wines from France's most celebrated wine regions."
+    },
+    "regions": {
+      "champagne": "Champagne",
+      "burgundy": "Burgundy",
+      "bordeaux": "Bordeaux",
+      "loire": "Loire Valley",
+      "rhone": "Rhône Valley",
+      "languedoc": "Languedoc & Provence",
+      "charente": "Charente"
+    },
+    "contact": {
+      "title": "Interested in Our Wines?",
+      "description": "Contact us to learn more about our portfolio and discuss how we can serve your business.",
+      "button": "Contact Our Team"
+    }
+  },
   "about": {
     "hero": {
       "title": "About Vinessence",
@@ -151,6 +175,11 @@
       "title": "About VINESSENCE | Authentic French Wine Importers Thailand",
       "description": "Learn about VINESSENCE - Thailand's premier boutique French wine importer. Direct partnerships with family-owned producers, authentic selections from France's finest regions.",
       "keywords": "About VINESSENCE, French wine importer Thailand, boutique wine specialist, authentic French wines, family producers France, wine partnerships Thailand, artisanal wine imports"
+    },
+    "wines": {
+      "title": "Wine Portfolio | French Wine Collection Thailand | VINESSENCE",
+      "description": "Explore VINESSENCE's curated collection of French wines from Champagne, Burgundy, Bordeaux, Loire Valley, Rhône, Languedoc & Charente. Premium boutique wines for Thailand's hospitality industry.",
+      "keywords": "French wine portfolio Thailand, Champagne Thailand, Burgundy wine Bangkok, Bordeaux wine collection, Loire Valley wines, Rhône Valley wines, Languedoc wines Thailand, boutique wine selection"
     },
     "forProducers": {
       "title": "French Wine Producers | Wine Export Partnership Thailand | VINESSENCE",

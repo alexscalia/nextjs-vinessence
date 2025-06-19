@@ -23,7 +23,7 @@ const WhoWeServeSection = () => {
               />
             </div>
             <div className="space-y-6">
-              <p className="text-lg font-medium text-gray-800 leading-relaxed">
+              <p className="text-lg text-gray-800 leading-relaxed">
                 {t('who_we_serve.description')}
               </p>
               
@@ -42,7 +42,7 @@ const WhoWeServeSection = () => {
                 ))}
               </div>
 
-              <p className="text-lg font-medium text-gray-800 leading-relaxed pt-4">
+              <p className="text-lg text-gray-800 leading-relaxed pt-4">
                 {t('who_we_serve.support_text')}
               </p>
             </div>

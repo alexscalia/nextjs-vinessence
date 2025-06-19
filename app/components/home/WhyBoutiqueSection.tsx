@@ -16,21 +16,21 @@ const WhyBoutiqueSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
               <div className="text-center space-y-4">
                 <h3 className="text-xl font-semibold text-wine-gold tracking-wide">{t('why_boutique.authenticity.title')}</h3>
-                <p className="text-lg font-medium text-gray-800 leading-relaxed">
+                <p className="text-lg text-gray-800 leading-relaxed">
                   {t('why_boutique.authenticity.description')}
                 </p>
               </div>
               
               <div className="text-center space-y-4">
                 <h3 className="text-xl font-semibold text-wine-gold tracking-wide">{t('why_boutique.limited_production.title')}</h3>
-                <p className="text-lg font-medium text-gray-800 leading-relaxed">
+                <p className="text-lg text-gray-800 leading-relaxed">
                   {t('why_boutique.limited_production.description')}
                 </p>
               </div>
               
               <div className="text-center space-y-4">
                 <h3 className="text-xl font-semibold text-wine-gold tracking-wide">{t('why_boutique.direct_partnerships.title')}</h3>
-                <p className="text-lg font-medium text-gray-800 leading-relaxed">
+                <p className="text-lg text-gray-800 leading-relaxed">
                   {t('why_boutique.direct_partnerships.description')}
                 </p>
               </div>

@@ -23,7 +23,7 @@ const ServicesSection = () => {
             </h2>
             <div className="space-y-8">
               <div className="space-y-2">
-                <h3 className="text-xl font-medium text-wine-charcoal">
+                <h3 className="text-xl font-semibold text-wine-gold tracking-wide">
                   {t('partnership.title')}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -31,7 +31,7 @@ const ServicesSection = () => {
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-medium text-wine-charcoal">
+                <h3 className="text-xl font-semibold text-wine-gold tracking-wide">
                   {t('sourcing.title')}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -39,7 +39,7 @@ const ServicesSection = () => {
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-medium text-wine-charcoal">
+                <h3 className="text-xl font-semibold text-wine-gold tracking-wide">
                   {t('storage.title')}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -47,7 +47,7 @@ const ServicesSection = () => {
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-medium text-wine-charcoal">
+                <h3 className="text-xl font-semibold text-wine-gold tracking-wide">
                   {t('assistance.title')}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">

@@ -12,7 +12,7 @@ const PhilosophySection = () => {
             <h2 className="text-3xl lg:text-4xl font-serif font-light text-wine-charcoal mb-8">
               {t('philosophy.title')}
             </h2>
-            <p className="text-lg font-medium text-gray-800 leading-relaxed">
+            <p className="text-lg text-gray-800 leading-relaxed">
               {t('philosophy.description')}
             </p>
           </div>

@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server'
 
 export async function generateMetadata(
   locale: string,
-  pageKey: 'home' | 'about' | 'services' | 'forProducers' | 'privacyPolicy' | 'termsConditions' | 'contact'
+  pageKey: 'home' | 'about' | 'services' | 'wines' | 'forProducers' | 'privacyPolicy' | 'termsConditions' | 'contact'
 ): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'Metadata' })
   
@@ -84,6 +84,8 @@ function getPagePath(pageKey: string): string {
       return 'about'
     case 'services':
       return 'services'
+    case 'wines':
+      return 'wines'
     case 'forProducers':
       return 'producers'
     case 'privacyPolicy':

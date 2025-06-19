@@ -12,7 +12,7 @@ const WinePortfolioSection = () => {
             {t('portfolio.title')}
           </h2>
           
-          <p className="text-lg font-medium leading-relaxed mb-12 text-gray-800 max-w-3xl mx-auto">
+          <p className="text-lg leading-relaxed mb-12 text-gray-800 max-w-3xl mx-auto">
             {t('portfolio.description')}
           </p>
 
