@@ -1,9 +1,7 @@
 import {setRequestLocale} from 'next-intl/server';
 import { generateMetadata as generatePageMetadata } from '../../../lib/metadata';
 import { Metadata } from 'next';
-import WinesHeroSection from '../../components/wines/WinesHeroSection';
-import WinesByRegionSection from '../../components/wines/WinesByRegionSection';
-import WinesListSection from '../../components/wines/WinesListSection';
+import { WinesHeroSection, WinesListSection } from '../../components/wines';
 
 export function generateStaticParams() {
   return [{locale: 'en'}, {locale: 'th'}];
@@ -32,7 +30,6 @@ export default async function WinesPage({
     <div className="min-h-screen bg-white">
       <WinesHeroSection />
       <WinesListSection />
-      <WinesByRegionSection />
     </div>
   );
 } 
