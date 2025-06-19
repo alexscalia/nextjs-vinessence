@@ -4,8 +4,10 @@ import { useTranslations } from 'next-intl';
 import { winesByRegion } from '../../../lib/wines-data';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Badge } from '../ui/badge';
+import { Button } from '../ui/button';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { useState, useEffect, useMemo } from 'react';
 
 export default function WinesListSection() {
   const t = useTranslations('wines');
@@ -13,13 +15,73 @@ export default function WinesListSection() {
   const params = useParams();
   const locale = params.locale as string;
 
+  // Pagination state
+  const [visibleWines, setVisibleWines] = useState(12); // Show 12 wines initially
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Flatten all wines from all regions for easier pagination
+  const allWines = useMemo(() => {
+    const wines: Array<any & { region_slug: string }> = [];
+    winesByRegion.forEach((region) => {
+      region.wines.forEach((wine) => {
+        wines.push({ ...wine, region_slug: region.region_slug });
+      });
+    });
+    return wines;
+  }, []);
+
+  const totalWines = allWines.length;
+  const hasMore = visibleWines < totalWines;
+
   // Get localized content for a wine based on locale
   const getLocalizedContent = (wine: any, field: string) => {
     const localizedField = `${field}_${locale}`;
     return (wine as any)[localizedField] || (wine as any)[`${field}_en`]; // fallback to English
   };
 
+  // Load more wines
+  const loadMore = () => {
+    setIsLoading(true);
+    // Simulate loading delay for better UX
+    setTimeout(() => {
+      setVisibleWines(prev => Math.min(prev + 12, totalWines));
+      setIsLoading(false);
+    }, 500);
+  };
 
+  // Infinite scroll implementation
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isLoading || !hasMore) return;
+
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight;
+      const clientHeight = document.documentElement.clientHeight;
+
+      // Trigger load more when user is 200px from bottom
+      if (scrollTop + clientHeight >= scrollHeight - 200) {
+        loadMore();
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isLoading, hasMore]);
+
+  // Get wines to display
+  const winesToShow = allWines.slice(0, visibleWines);
+
+  // Group wines by region for display
+  const groupedWines = useMemo(() => {
+    const grouped: { [key: string]: Array<any> } = {};
+    winesToShow.forEach((wine) => {
+      if (!grouped[wine.region_slug]) {
+        grouped[wine.region_slug] = [];
+      }
+      grouped[wine.region_slug].push(wine);
+    });
+    return grouped;
+  }, [winesToShow]);
 
   return (
     <section className="py-16 bg-white">
@@ -31,21 +93,28 @@ export default function WinesListSection() {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {t('collection_description')}
           </p>
+          <div className="mt-4 text-sm text-gray-500">
+            Showing {visibleWines} of {totalWines} wines
+          </div>
         </div>
 
-        {winesByRegion.map((region) => (
-          <div key={region.region_slug} className="mb-16">
+        {/* Display wines grouped by region */}
+        {Object.entries(groupedWines).map(([regionSlug, wines]) => (
+          <div key={regionSlug} className="mb-16">
             {/* Region Title */}
             <div className="text-center mb-8">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                {tRegions(region.region_slug)}
+                {tRegions(regionSlug)}
               </h3>
               <div className="w-24 h-1 bg-red-600 mx-auto"></div>
+              <div className="mt-2 text-sm text-gray-500">
+                {wines.length} {wines.length === 1 ? 'wine' : 'wines'}
+              </div>
             </div>
 
             {/* Wine Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {region.wines.map((wine) => (
+              {wines.map((wine) => (
                 <Link
                   key={wine.slug}
                   href={`/${locale}/wines/${wine.slug}`}
@@ -108,6 +177,33 @@ export default function WinesListSection() {
             </div>
           </div>
         ))}
+
+        {/* Loading state and Load More button */}
+        <div className="text-center mt-12">
+          {isLoading && (
+            <div className="flex items-center justify-center mb-4">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-red-600"></div>
+              <span className="ml-2 text-gray-600">Loading more wines...</span>
+            </div>
+          )}
+          
+          {!isLoading && hasMore && (
+            <Button 
+              onClick={loadMore}
+              variant="outline"
+              size="lg"
+              className="px-8 py-3 text-red-700 border-red-700 hover:bg-red-700 hover:text-white transition-colors"
+            >
+              Load More Wines ({totalWines - visibleWines} remaining)
+            </Button>
+          )}
+          
+          {!hasMore && visibleWines > 12 && (
+            <p className="text-gray-600 italic">
+              You've seen all {totalWines} wines in our collection
+            </p>
+          )}
+        </div>
       </div>
     </section>
   );
