@@ -201,6 +201,59 @@ export const winesByRegion: WineRegion[] = [
         "price": "1,650 + VAT"
       }
     ]
+  },
+  {
+    "region_slug": "burgundy",
+    "wines": [
+      {
+        "name": "Closerie des Alisiers Vieilles Vignes Chablis 1er Cru",
+        "slug": "closerie-des-alisiers-vieilles-vignes-chablis-1er-cru",
+        "region_en": "Chablis, Burgundy",
+        "region_th": "ชาบลิ, เบอร์กันดี",
+        "grape_varieties_en": "100% Chardonnay",
+        "grape_varieties_th": "100% ชาร์ดอนเนย์",
+        "the_estate_en": "Closerie des Alisiers is a boutique label that sources from old vines across the Chablis region. It focuses on showcasing terroir through minimal intervention and careful selection of plots with great aging potential.",
+        "the_estate_th": "Closerie des Alisiers เป็นแบรนด์บูติกที่จัดหาจากเถาองุ่นแก่ทั่วภูมิภาคชาบลิ มุ่งเน้นการแสดงเทอร์รัวร์ผ่านการแทรกแซงเพียงเล็กน้อยและการคัดเลือกแปลงที่มีศักยภาพในการหมักที่ยอดเยี่ยม",
+        "terroir_en": "• Soil: Kimmeridgian limestone rich in marine fossils\n• Vineyard: 45-year-old vines from Premier Cru sites",
+        "terroir_th": "• ดิน: หินปูนคิมเมอริเดียนอุดมไปด้วยฟอสซิลทางทะเล\n• ไร่องุ่น: เถาองุ่นอายุ 45 ปีจากไซต์ Premier Cru",
+        "vinification_en": "• Fermentation in stainless steel tanks\n• Aged on lees for 10–12 months\n• Minimal sulfur and no oak to preserve purity",
+        "vinification_th": "• หมักในถังสแตนเลส\n• หมักบนตะกอนเป็นเวลา 10-12 เดือน\n• ใช้ซัลเฟอร์น้อยที่สุดและไม่ใช้ไม้โอ๊คเพื่อรักษาความบริสุทธิ์",
+        "tasting_notes_en": "Fresh and intense on the nose, with citrus, flint, and white peach. The palate is crisp and mineral-driven, with chalky texture and long saline finish.",
+        "tasting_notes_th": "สดชื่นและเข้มข้นในจมูก พร้อมส้ม หินไฟ และลูกพีชขาว รสชาติกรอบและขับเคลื่อนด้วยแร่ธาตุ พร้อมเนื้อสัมผัสชอล์กและการจบที่เค็มยาวนาน",
+        "pairing_en": "Excellent with oysters, sea bass, grilled scallops, and goat cheese.",
+        "pairing_th": "ยอดเยี่ยมกับหอยนางรม เซียเบส หอยเชลล์ย่าง และชีสแพะ",
+        "service_temperature": "10–12°C",
+        "vintage": "2021",
+        "sku": "CLAL-001",
+        "abv": "13%",
+        "rating": "4.2",
+        "price": "1,490 + VAT"
+      },
+      {
+        "name": "Closerie des Alisiers Petit Chablis",
+        "slug": "closerie-des-alisiers-petit-chablis",
+        "region_en": "Chablis, Burgundy",
+        "region_th": "ชาบลิ, เบอร์กันดี",
+        "grape_varieties_en": "100% Chardonnay",
+        "grape_varieties_th": "100% ชาร์ดอนเนย์",
+        "the_estate_en": "Closerie des Alisiers is a small-scale négociant and micro-producer that selects grapes from top-quality vineyards in Chablis. The focus is on minimal intervention, clean vinification, and expressive terroir.",
+        "the_estate_th": "Closerie des Alisiers เป็นผู้ค้าขนาดเล็กและผู้ผลิตไมโครที่คัดเลือกองุ่นจากไร่องุ่นคุณภาพสูงในชาบลิ เน้นการแทรกแซงเพียงเล็กน้อย การหมักที่สะอาด และเทอร์รัวร์ที่แสดงออก",
+        "terroir_en": "• Soil: Portlandian limestone\n• Vineyard: Young vines on high-altitude slopes",
+        "terroir_th": "• ดิน: หินปูนพอร์ตแลนเดียน\n• ไร่องุ่น: เถาองุ่นหนุ่มบนเนินเขาระดับสูง",
+        "vinification_en": "• Fermented in stainless steel\n• Aged on fine lees for 6–8 months\n• No oak used to preserve freshness",
+        "vinification_th": "• หมักในสแตนเลส\n• หมักบนตะกอนละเอียดเป็นเวลา 6-8 เดือน\n• ไม่ใช้ไม้โอ๊คเพื่อรักษาความสดใหม่",
+        "tasting_notes_en": "Lively and bright with aromas of green apple, citrus, and white flowers. The palate is zesty and clean with refreshing minerality and a crisp, dry finish.",
+        "tasting_notes_th": "มีชีวิตชีวาและสดใสด้วยกลิ่นหอมของแอปเปิ้ลเขียว ส้ม และดอกไม้สีขาว รสชาติเปรี้ยวซ่าและสะอาด พร้อมแร่ธาตุที่สดชื่นและการจบที่กรอบและแห้ง",
+        "pairing_en": "Great with shrimp cocktail, sushi, tempura, or fresh goat cheese.",
+        "pairing_th": "ยอดเยี่ยมกับค็อกเทลกุ้ง ซูชิ เทมปุระ หรือชีสแพะสด",
+        "service_temperature": "8–10°C",
+        "vintage": "2022",
+        "sku": "CLAL-002",
+        "abv": "12.5%",
+        "rating": "4.0",
+        "price": "990 + VAT"
+      }
+    ]
   }
 ];
 
