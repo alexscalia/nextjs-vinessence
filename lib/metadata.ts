@@ -85,7 +85,7 @@ function getPagePath(pageKey: string): string {
     case 'services':
       return 'services'
     case 'forProducers':
-      return 'for-producers'
+      return 'producers'
     case 'privacyPolicy':
       return 'privacy-policy'
     case 'termsConditions':

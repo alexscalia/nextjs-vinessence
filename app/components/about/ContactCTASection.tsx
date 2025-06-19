@@ -5,7 +5,7 @@ const ContactCTASection = () => {
   const t = useTranslations('about.cta');
 
   return (
-    <section className="py-16 bg-gray-800">
+    <section className="py-16 bg-stone-800">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-serif font-light text-wine-gold mb-6">

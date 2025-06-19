@@ -3,7 +3,7 @@
     "home": "Home",
     "about": "About Us",
     "wines": "Wine Portfolio",
-    "producers": "For Producers",
+    "producers": "Producers",
     "resources": "Resources",
     "blog": "Blog & News",
     "events": "Events",
@@ -116,6 +116,28 @@
       "wines_button": "Explore Our Wines"
     }
   },
+  "producers": {
+    "hero": {
+      "title": "French Wine Producers",
+      "subtitle": "Partner with Thailand's Premier Boutique Wine Importer"
+    },
+    "content": {
+      "intro": "Vinessence is always open to new partnerships with boutique French wineries seeking representation in Thailand. We provide:",
+      "services": {
+        "title": "We Provide:",
+        "import": "Full import management",
+        "distribution": "Distribution to restaurants, hotels, and specialty retailers",
+        "expertise": "Local market expertise",
+        "operations": "Professional, compliant operations"
+      },
+      "closing": "If you are a French producer interested in expanding to Thailand, contact our team for more information.",
+      "cta": {
+        "title": "Ready to Enter the Thai Market?",
+        "description": "Join our portfolio of distinguished French producers and reach Thailand's growing wine market.",
+        "button": "Contact Us"
+      }
+    }
+  },
   "Metadata": {
     "site": {
       "name": "VINESSENCE - Boutique French Wine Imports Thailand"
@@ -129,6 +151,11 @@
       "title": "About VINESSENCE | Authentic French Wine Importers Thailand",
       "description": "Learn about VINESSENCE - Thailand's premier boutique French wine importer. Direct partnerships with family-owned producers, authentic selections from France's finest regions.",
       "keywords": "About VINESSENCE, French wine importer Thailand, boutique wine specialist, authentic French wines, family producers France, wine partnerships Thailand, artisanal wine imports"
+    },
+    "forProducers": {
+      "title": "French Wine Producers | Wine Export Partnership Thailand | VINESSENCE",
+      "description": "Partner with VINESSENCE to export your boutique French wines to Thailand. Full import management, distribution network, local market expertise for French wine producers.",
+      "keywords": "French wine export Thailand, wine producer partnership, export French wine Asia, boutique wine distribution Thailand, French winery representation, wine import partnership"
     }
   }
 }
