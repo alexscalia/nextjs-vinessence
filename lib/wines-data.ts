@@ -1,6 +1,7 @@
 export interface Wine {
   name: string;
   slug: string;
+  region_slug: string;
   region_en: string;
   region_th: string;
   grape_varieties_en: string;
@@ -27,6 +28,7 @@ export const wines: Wine[] = [
   {
     "name": "Prestige des Sacres Brut Nature Champagne",
     "slug": "prestige-des-sacres-brut-nature-champagne",
+    "region_slug": "champagne",
     "region_en": "Champagne, Montagne de Reims",
     "region_th": "แชมเปญ, มงตาญเดอแรงส์",
     "grape_varieties_en": "1/3 Chardonnay, 1/3 Pinot Meunier, 1/3 Pinot Noir",
@@ -51,6 +53,7 @@ export const wines: Wine[] = [
   {
     "name": "Prestige des Sacres Brut Prestige Champagne",
     "slug": "prestige-des-sacres-brut-prestige-champagne",
+    "region_slug": "champagne",
     "region_en": "Montagne de Reims, Champagne",
     "region_th": "มงตาญเดอแรงส์, แชมเปญ",
     "grape_varieties_en": "1/3 Chardonnay, 1/3 Pinot Meunier, 1/3 Pinot Noir",
@@ -75,6 +78,7 @@ export const wines: Wine[] = [
   {
     "name": "Prestige des Sacres 30&3 Extra Brut Champagne",
     "slug": "prestige-des-sacres-30-3-extra-brut-champagne",
+    "region_slug": "champagne",
     "region_en": "Montagne de Reims, Champagne",
     "region_th": "มงตาญเดอแรงส์, แชมเปญ",
     "grape_varieties_en": "30% Meunier vinified in oak, 70% Chardonnay",
@@ -99,6 +103,7 @@ export const wines: Wine[] = [
   {
     "name": "Prestige des Sacres Cuvée Dynastie Blanc de Blancs Brut Champagne",
     "slug": "prestige-des-sacres-cuvee-dynastie-blanc-de-blancs-brut-champagne",
+    "region_slug": "champagne",
     "region_en": "Montagne de Reims, Champagne",
     "region_th": "มงตาญเดอแรงส์, แชมเปญ",
     "grape_varieties_en": "100% Chardonnay",
@@ -123,6 +128,7 @@ export const wines: Wine[] = [
   {
     "name": "Prestige des Sacres Cuvée Grenat Millésime Champagne",
     "slug": "prestige-des-sacres-cuvee-grenat-millesime-champagne",
+    "region_slug": "champagne",
     "region_en": "Montagne de Reims, Champagne",
     "region_th": "มงตาญเดอแรงส์, แชมเปญ",
     "grape_varieties_en": "50% Chardonnay, 50% Pinot Noir",
@@ -143,6 +149,56 @@ export const wines: Wine[] = [
     "abv": "12.5%",
     "rating": "4.1",
     "price": "2,030 + VAT"
+  },
+  {
+    "name": "Prestige des Sacres Brut Rosé Champagne",
+    "slug": "prestige-des-sacres-brut-rose-champagne",
+    "region_slug": "champagne",
+    "region_en": "Montagne de Reims, Champagne",
+    "region_th": "มงตาญเดอแรงส์, แชมเปญ",
+    "grape_varieties_en": "30% Chardonnay, 30% Pinot Noir, 40% Pinot Meunier with 15% vinified red",
+    "grape_varieties_th": "30% ชาร์ดอนเนย์, 30% ปีโน นัวร์, 40% ปีโน มูนิเยร์ พร้อม 15% หมักแบบไวน์แดง",
+    "the_estate_en": "Founded in the 1960s by René Lamblot and fellow winegrowers, Champagne Prestige des Sacres represents the expertise of 60 passionate growers. Their vineyards on the western slopes of the Montagne de Reims produce Champagnes that celebrate tradition and quality, honoring the historic coronations of French kings in Reims.",
+    "the_estate_th": "ก่อตั้งในปี 1960 โดย René Lamblot และเพื่อนผู้ปลูกไวน์ แชมเปญ เพรสทีจ เดส์ ซาเคร์ เป็นตัวแทนของความเชี่ยวชาญของผู้ปลูกผู้หลงใหล 60 ราย ไร่องุ่นของพวกเขาบนเนินเขาทางตะวันตกของมงตาญเดอแรงส์ ผลิตแชมเปญที่เฉลิมฉลองประเพณีและคุณภาพ เพื่อเป็นเกียรติแก่การสถาปนากษัตริย์ฝรั่งเศสในประวัติศาสตร์ที่แรงส์",
+    "terroir_en": "• Soil: Limestone and chalk\n• Agriculture: Sustainable vineyard management",
+    "terroir_th": "• ดิน: หินปูนและชอล์ก\n• การเกษตร: การจัดการไร่องุ่นอย่างยั่งยืน",
+    "vinification_en": "• 60% wine from the reference year, 40% reserve wines\n• Dosage: 9–9.5 g/L\n• Aged for 3 years in cellars,\n  followed by 6 months in bottle",
+    "vinification_th": "• ไวน์ 60% จากปีอ้างอิง, ไวน์สำรอง 40%\n• โดสาจ: 9-9.5 กรัม/ลิตร\n• หมักเป็นเวลา 3 ปีในห้องเก็บ\n  ตามด้วย 6 เดือนในขวด",
+    "tasting_notes_en": "A pale copper color with fine bubbles. The nose starts with wild berries and strawberries, evolving into caramel and butterscotch. The palate is round and juicy, featuring strawberry and kirsch cherry flavors with a fresh, tart finish.",
+    "tasting_notes_th": "สีทองแดงอ่อนพร้อมฟองอากาศละเอียด กลิ่นเริ่มต้นด้วยเบอร์รี่ป่าและสตรอเบอร์รี่ พัฒนาไปสู่คาราเมลและบัตเตอร์สก็อตช์ รสชาติกลมกล่อมและฉ่ำ โดดเด่นด้วยรสสตรอเบอร์รี่และเชอร์รี่เคิร์ช พร้อมการจบที่สดชื่นและเปรี้ยว",
+    "pairing_en": "Pairs beautifully with charcuterie, prosciutto, Serrano ham, and fruity or chocolate-based desserts.",
+    "pairing_th": "เข้ากันอย่างสวยงามกับชาร์คูเตอรี่ โปรชูตโต แฮมเซร์ราโน และขนมหวานที่มีผลไม้หรือช็อกโกแลตเป็นส่วนประกอบ",
+    "service_temperature": "8–10°C",
+    "vintage": "Non vintage",
+    "sku": "PRSA-005",
+    "abv": "12.5%",
+    "rating": "3.9",
+    "price": "1,820 + VAT"
+  },
+  {
+    "name": "Prestige des Sacres Demi-Sec Champagne",
+    "slug": "prestige-des-sacres-demi-sec-champagne",
+    "region_slug": "champagne",
+    "region_en": "Montagne de Reims, Champagne",
+    "region_th": "มงตาญเดอแรงส์, แชมเปญ",
+    "grape_varieties_en": "1/3 Chardonnay, 1/3 Pinot Meunier, 1/3 Pinot Noir",
+    "grape_varieties_th": "1/3 ชาร์ดอนเนย์, 1/3 ปีโน มูนิเยร์, 1/3 ปีโน นัวร์",
+    "the_estate_en": "Founded in the 1960s by René Lamblot and fellow winegrowers, Champagne Prestige des Sacres represents the expertise of 60 passionate growers. Their vineyards on the western slopes of the Montagne de Reims produce Champagnes that celebrate tradition and quality, honoring the historic coronations of French kings in Reims.",
+    "the_estate_th": "ก่อตั้งในปี 1960 โดย René Lamblot และเพื่อนผู้ปลูกไวน์ แชมเปญ เพรสทีจ เดส์ ซาเคร์ เป็นตัวแทนของความเชี่ยวชาญของผู้ปลูกผู้หลงใหล 60 ราย ไร่องุ่นของพวกเขาบนเนินเขาทางตะวันตกของมงตาญเดอแรงส์ ผลิตแชมเปญที่เฉลิมฉลองประเพณีและคุณภาพ เพื่อเป็นเกียรติแก่การสถาปนากษัตริย์ฝรั่งเศสในประวัติศาสตร์ที่แรงส์",
+    "terroir_en": "• Soil: Limestone and chalk\n• Agriculture: Sustainable vineyard management",
+    "terroir_th": "• ดิน: หินปูนและชอล์ก\n• การเกษตร: การจัดการไร่องุ่นอย่างยั่งยืน",
+    "vinification_en": "• 60% wine from the reference year, 40% reserve wines\n• Dosage: 40 g/L\n• Aged in cellars for 4 years,\n  followed by 6 months in bottle",
+    "vinification_th": "• ไวน์ 60% จากปีอ้างอิง, ไวน์สำรอง 40%\n• โดสาจ: 40 กรัม/ลิตร\n• หมักในห้องเก็บเป็นเวลา 4 ปี\n  ตามด้วย 6 เดือนในขวด",
+    "tasting_notes_en": "Aromas of shortbread, ripe mango, papaya, honey, and butterscotch. Sweet spices like cinnamon and nutmeg complement dried fruit notes. The palate is round and velvety, balancing acidity and effervescence with caramel and roasted nut flavors.",
+    "tasting_notes_th": "กลิ่นหอมของช็อตเบรด มะม่วงสุก มะละกอ น้ำผึ้ง และบัตเตอร์สก็อตช์ เครื่องเทศหวานเช่นอบเชยและจันทน์เทศเสริมโน้ตผลไม้แห้ง รสชาติกลมกล่อมและนุ่มนวล สมดุลระหว่างความเป็นกิดและฟองอากาศ พร้อมรสคาราเมลและถั่วคั่ว",
+    "pairing_en": "Perfect with blue cheeses (Roquefort, Stilton), foie gras, Asian sweet-and-sour dishes, and desserts.",
+    "pairing_th": "เหมาะสมบูรณ์กับชีสบลู (โรคฟอร์ ส្ទิลตัน) ฟัวกราส์ อาหารเอเชียรสเปรี้ยวหวาน และขนมหวาน",
+    "service_temperature": "8–10°C",
+    "vintage": "Non vintage",
+    "sku": "PRSA-007",
+    "abv": "12.5%",
+    "rating": "4.0",
+    "price": "1,650 + VAT"
   }
 ];
 
