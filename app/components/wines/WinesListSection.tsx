@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { wines } from '../../../lib/wines-data';
+import { getAllWines } from '../../../lib/wines-data';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Badge } from '../ui/badge';
 import Link from 'next/link';
@@ -11,6 +11,8 @@ export default function WinesListSection() {
   const t = useTranslations('wines');
   const params = useParams();
   const locale = params.locale as string;
+  
+  const wines = getAllWines();
 
   // Get localized content for a wine based on locale
   const getLocalizedContent = (wine: typeof wines[0], field: string) => {
