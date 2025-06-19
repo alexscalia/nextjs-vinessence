@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { getAllWines } from '../../../lib/wines-data';
+import { wineRegions } from '../../../lib/wines-data';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Badge } from '../ui/badge';
 import Link from 'next/link';
@@ -9,13 +9,12 @@ import { useParams } from 'next/navigation';
 
 export default function WinesListSection() {
   const t = useTranslations('wines');
+  const tRegions = useTranslations('wines.regions');
   const params = useParams();
   const locale = params.locale as string;
-  
-  const wines = getAllWines();
 
   // Get localized content for a wine based on locale
-  const getLocalizedContent = (wine: typeof wines[0], field: string) => {
+  const getLocalizedContent = (wine: any, field: string) => {
     const localizedField = `${field}_${locale}`;
     return (wine as any)[localizedField] || (wine as any)[`${field}_en`]; // fallback to English
   };
@@ -32,59 +31,72 @@ export default function WinesListSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {wines.map((wine) => (
-            <Link
-              key={wine.slug}
-              href={`/${locale}/wines/${wine.slug}`}
-              className="group"
-            >
-              <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                <CardHeader>
-                  <div className="flex justify-between items-start mb-2">
-                    <Badge variant="secondary">{wine.vintage}</Badge>
-                    <div className="flex items-center">
-                      <span className="text-yellow-600 font-bold">{wine.rating}</span>
-                      <span className="text-gray-500 text-sm ml-1">/5</span>
-                    </div>
-                  </div>
-                  <CardTitle className="text-xl group-hover:text-red-700 transition-colors">
-                    {wine.name}
-                  </CardTitle>
-                  <p className="text-gray-600">{getLocalizedContent(wine, 'region')}</p>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">
-                        {t('grape_varieties')}
-                      </h4>
-                      <p className="text-sm text-gray-600">{getLocalizedContent(wine, 'grape_varieties')}</p>
-                    </div>
-                    
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">
-                        {t('tasting_notes')}
-                      </h4>
-                      <p className="text-sm text-gray-600 line-clamp-3">
-                        {getLocalizedContent(wine, 'tasting_notes')}
-                      </p>
-                    </div>
-                    
-                    <div className="flex justify-between items-center pt-4 border-t">
-                      <div className="text-sm text-gray-600">
-                        <span className="font-medium">{wine.abv}</span> | {wine.service_temperature}
+        {wineRegions.map((region) => (
+          <div key={region.region_slug} className="mb-16">
+            {/* Region Title */}
+            <div className="text-center mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                {tRegions(region.region_slug)}
+              </h3>
+              <div className="w-24 h-1 bg-red-600 mx-auto"></div>
+            </div>
+
+            {/* Wine Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {region.wines.map((wine) => (
+                <Link
+                  key={wine.slug}
+                  href={`/${locale}/wines/${wine.slug}`}
+                  className="group"
+                >
+                  <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <CardHeader>
+                      <div className="flex justify-between items-start mb-2">
+                        <Badge variant="secondary">{wine.vintage}</Badge>
+                        <div className="flex items-center">
+                          <span className="text-yellow-600 font-bold">{wine.rating}</span>
+                          <span className="text-gray-500 text-sm ml-1">/5</span>
+                        </div>
                       </div>
-                      <div className="text-lg font-bold text-gray-900">
-                        ₿{wine.price}
+                      <CardTitle className="text-xl group-hover:text-red-700 transition-colors">
+                        {wine.name}
+                      </CardTitle>
+                      <p className="text-gray-600">{getLocalizedContent(wine, 'region')}</p>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-3">
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1">
+                            {t('grape_varieties')}
+                          </h4>
+                          <p className="text-sm text-gray-600">{getLocalizedContent(wine, 'grape_varieties')}</p>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1">
+                            {t('tasting_notes')}
+                          </h4>
+                          <p className="text-sm text-gray-600 line-clamp-3">
+                            {getLocalizedContent(wine, 'tasting_notes')}
+                          </p>
+                        </div>
+                        
+                        <div className="flex justify-between items-center pt-4 border-t">
+                          <div className="text-sm text-gray-600">
+                            <span className="font-medium">{wine.abv}</span> | {wine.service_temperature}
+                          </div>
+                          <div className="text-lg font-bold text-gray-900">
+                            ₿{wine.price}
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
-        </div>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
