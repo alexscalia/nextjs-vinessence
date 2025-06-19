@@ -68,6 +68,54 @@
     "english": "English",
     "thai": "ไทย"
   },
+  "about": {
+    "hero": {
+      "title": "About Vinessence",
+      "subtitle": "Authentic French Wines, Personally Selected."
+    },
+    "intro": {
+      "title": "Intro",
+      "paragraph1": "Vinessence was founded with a clear purpose: to bring Thailand's restaurants, hotels, and wine professionals direct access to authentic boutique French wines — wines that are crafted with passion, heritage, and a deep respect for terroir.",
+      "paragraph2": "We don't chase trends or commercial brands. Instead, we focus on quality, character, and relationships — selecting only wines that we believe in, from people we trust."
+    },
+    "who_we_are": {
+      "title": "Who We Are",
+      "paragraph1": "Vinessence is not a mass-market importer.",
+      "paragraph2": "We specialize in boutique French wines from independent, family-owned producers. Every bottle in our collection is the result of hands-on sourcing, personal vineyard visits, and long-term partnerships with artisans who represent the heart of French winemaking.",
+      "paragraph3": "Our portfolio is curated with purpose — balancing well-known regions like Bordeaux and Burgundy with hidden gems from the Loire, Rhône, Languedoc, and beyond."
+    },
+    "why_boutique": {
+      "title": "Why Boutique Wines Matter",
+      "paragraph1": "Boutique wines offer something mass-produced bottles never can: a sense of place, story, and soul. These wines are made by people — not factories — and reflect generations of tradition, respect for nature, and a deep connection to the land.",
+      "paragraph2": "They're not made for supermarket shelves.",
+      "paragraph3": "They're made for people who care about what's in the glass."
+    },
+    "commitment": {
+      "title": "Our Commitment",
+      "partnership": {
+        "title": "Personal partnerships with wineries",
+        "description": "We work directly with producers — no brokers, no shortcuts."
+      },
+      "sourcing": {
+        "title": "Boutique-scale sourcing",
+        "description": "Limited-production wines, selected for quality, not quantity."
+      },
+      "storage": {
+        "title": "Temperature-controlled storage and reliable nationwide delivery",
+        "description": "Your wines are kept in optimal condition from France to your venue."
+      },
+      "assistance": {
+        "title": "Personalized wine selection assistance tailored to your restaurant or venue",
+        "description": "We help you find the right wines for your concept, guests, and pricing strategy."
+      }
+    },
+    "cta": {
+      "title": "Ready to Discover Exceptional French Wines?",
+      "description": "Let's discuss how our boutique wine collection can enhance your venue's offering and delight your guests.",
+      "contact_button": "Contact Our Team",
+      "wines_button": "Explore Our Wines"
+    }
+  },
   "Metadata": {
     "site": {
       "name": "VINESSENCE - Boutique French Wine Imports Thailand"
@@ -76,6 +124,11 @@
       "title": "VINESSENCE | Boutique French Wine Imports | Thailand",
       "description": "Discover exclusive boutique French wines imported directly to Thailand. Boutique selections from Burgundy, Bordeaux, Champagne & more. Serving restaurants, hotels, bars & hospitality industry.",
       "keywords": "French wine Thailand, boutique wine imports, boutique wine Thailand, wine distributor Bangkok, French wine restaurant, Burgundy wine Thailand, Bordeaux wine import, Champagne Thailand, wine hospitality Thailand"
+    },
+    "about": {
+      "title": "About VINESSENCE | Authentic French Wine Importers Thailand",
+      "description": "Learn about VINESSENCE - Thailand's premier boutique French wine importer. Direct partnerships with family-owned producers, authentic selections from France's finest regions.",
+      "keywords": "About VINESSENCE, French wine importer Thailand, boutique wine specialist, authentic French wines, family producers France, wine partnerships Thailand, artisanal wine imports"
     }
   }
 }
