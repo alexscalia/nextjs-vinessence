@@ -58,10 +58,10 @@ export default function WinesListSection() {
                           <span className="text-gray-500 text-sm ml-1">/5</span>
                         </div>
                       </div>
-                      <CardTitle className="text-xl group-hover:text-red-700 transition-colors">
+                      <CardTitle className="text-lg leading-tight group-hover:text-red-700 transition-colors break-words">
                         {wine.name}
                       </CardTitle>
-                      <p className="text-gray-600">{getLocalizedContent(wine, 'region')}</p>
+                      <p className="text-gray-600 text-sm">{getLocalizedContent(wine, 'region')}</p>
                     </CardHeader>
                     <CardContent>
                       <div className="space-y-4">

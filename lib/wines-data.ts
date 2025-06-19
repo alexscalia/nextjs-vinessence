@@ -33,7 +33,7 @@ export const winesByRegion: WineRegion[] = [
     "region_slug": "champagne",
     "wines": [
       {
-        "name": "Prestige des Sacres Brut Nature Champagne",
+        "name": "Prestige des Sacres\nBrut Nature Champagne",
         "slug": "prestige-des-sacres-brut-nature-champagne",
         "region_en": "Champagne, Montagne de Reims",
         "region_th": "แชมเปญ, มงตาญเดอแรงส์",
@@ -57,7 +57,7 @@ export const winesByRegion: WineRegion[] = [
         "price": "1,670 + VAT"
       },
       {
-        "name": "Prestige des Sacres Brut Prestige Champagne",
+        "name": "Prestige des Sacres\nBrut Prestige Champagne",
         "slug": "prestige-des-sacres-brut-prestige-champagne",
         "region_en": "Montagne de Reims, Champagne",
         "region_th": "มงตาญเดอแรงส์, แชมเปญ",
@@ -81,7 +81,7 @@ export const winesByRegion: WineRegion[] = [
         "price": "1,570 + VAT"
       },
       {
-        "name": "Prestige des Sacres 30&3 Extra Brut Champagne",
+        "name": "Prestige des Sacres\n30&3 Extra Brut Champagne",
         "slug": "prestige-des-sacres-30-3-extra-brut-champagne",
         "region_en": "Montagne de Reims, Champagne",
         "region_th": "มงตาญเดอแรงส์, แชมเปญ",
@@ -105,7 +105,7 @@ export const winesByRegion: WineRegion[] = [
         "price": "2,230 + VAT"
       },
       {
-        "name": "Prestige des Sacres Cuvée Dynastie Blanc de Blancs Brut Champagne",
+        "name": "Prestige des Sacres\nCuvée Dynastie Blanc de Blancs Brut Champagne",
         "slug": "prestige-des-sacres-cuvee-dynastie-blanc-de-blancs-brut-champagne",
         "region_en": "Montagne de Reims, Champagne",
         "region_th": "มงตาญเดอแรงส์, แชมเปญ",
@@ -129,7 +129,7 @@ export const winesByRegion: WineRegion[] = [
         "price": "1,950 + VAT"
       },
       {
-        "name": "Prestige des Sacres Cuvée Grenat Millésime Champagne",
+        "name": "Prestige des Sacres\nCuvée Grenat Millésime Champagne",
         "slug": "prestige-des-sacres-cuvee-grenat-millesime-champagne",
         "region_en": "Montagne de Reims, Champagne",
         "region_th": "มงตาญเดอแรงส์, แชมเปญ",
@@ -153,7 +153,7 @@ export const winesByRegion: WineRegion[] = [
         "price": "2,030 + VAT"
       },
       {
-        "name": "Prestige des Sacres Brut Rosé Champagne",
+        "name": "Prestige des Sacres\nBrut Rosé Champagne",
         "slug": "prestige-des-sacres-brut-rose-champagne",
         "region_en": "Montagne de Reims, Champagne",
         "region_th": "มงตาญเดอแรงส์, แชมเปญ",
@@ -177,7 +177,7 @@ export const winesByRegion: WineRegion[] = [
         "price": "1,820 + VAT"
       },
       {
-        "name": "Prestige des Sacres Demi-Sec Champagne",
+        "name": "Prestige des Sacres\nDemi-Sec Champagne",
         "slug": "prestige-des-sacres-demi-sec-champagne",
         "region_en": "Montagne de Reims, Champagne",
         "region_th": "มงตาญเดอแรงส์, แชมเปญ",
@@ -206,7 +206,7 @@ export const winesByRegion: WineRegion[] = [
     "region_slug": "burgundy",
     "wines": [
       {
-        "name": "Closerie des Alisiers Vieilles Vignes Chablis 1er Cru",
+        "name": "Closerie des Alisiers\nVieilles Vignes Chablis 1er Cru",
         "slug": "closerie-des-alisiers-vieilles-vignes-chablis-1er-cru",
         "region_en": "Chablis, Burgundy",
         "region_th": "ชาบลิ, เบอร์กันดี",
@@ -230,7 +230,7 @@ export const winesByRegion: WineRegion[] = [
         "price": "1,490 + VAT"
       },
       {
-        "name": "Closerie des Alisiers Petit Chablis",
+        "name": "Closerie des Alisiers\nPetit Chablis",
         "slug": "closerie-des-alisiers-petit-chablis",
         "region_en": "Chablis, Burgundy",
         "region_th": "ชาบลิ, เบอร์กันดี",
