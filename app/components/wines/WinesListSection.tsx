@@ -19,10 +19,7 @@ export default function WinesListSection() {
     return (wine as any)[localizedField] || (wine as any)[`${field}_en`]; // fallback to English
   };
 
-  // Function to format text with line breaks
-  const formatText = (text: string) => {
-    return text.replace(/\\n/g, '<br>');
-  };
+
 
   return (
     <section className="py-16 bg-white">
@@ -65,7 +62,7 @@ export default function WinesListSection() {
                       </div>
                       <CardTitle 
                         className="text-lg leading-tight group-hover:text-red-700 transition-colors break-words"
-                        dangerouslySetInnerHTML={{ __html: formatText(wine.name) }}
+                        dangerouslySetInnerHTML={{ __html: wine.name }}
                       />
                       <p className="text-gray-600 text-sm">{getLocalizedContent(wine, 'region')}</p>
                     </CardHeader>
